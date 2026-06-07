@@ -130,8 +130,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      ```tsx
+      
 <section
   id="contact"
   className="section cta"
