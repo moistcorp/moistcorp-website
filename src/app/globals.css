@@ -6,9 +6,8 @@ html{scroll-behavior:smooth}
 .header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee;z-index:100}
 .header-inner {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 6px 0;
 }
 .nav{display:flex;gap:28px}
 .nav a{text-decoration:none;color:#111}
@@ -48,7 +47,6 @@ h1{font-size:38px}
 
 .footer {
   background: #fff;
-  border-top: 1px solid #e5e5e5;
   padding: 70px 0 30px;
 }
 
@@ -79,7 +77,6 @@ h1{font-size:38px}
   margin-top: 40px;
   width: 100%;
   padding-top: 20px;
-  border-top: 1px solid #e5e5e5;
 }
 
 .footer-bottom p {

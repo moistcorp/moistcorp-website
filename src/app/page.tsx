@@ -1,20 +1,9 @@
+import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <main>
-      <header className="header">
-  <div className="container header-inner">
-    <Image
-      src="/moistcorp-logo.png"
-      alt="Moist Corp"
-      width={75}
-      height={70}
-      priority
-    />
-  </div>
-</header>
-
       <section className="hero">
         <div className="container hero-grid">
           <div>
@@ -84,7 +73,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="process" className="section grey">
+      <section id="process" className="section">
         <div className="container">
           <h2>The Moist Corp Process</h2>
 
@@ -230,36 +219,6 @@ export default function Home() {
 
   </div>
 </section>
-```
-
-
-  <footer className="footer">
-  <div className="container footer-simple">
-
-    <div className="footer-contact">
-
-      <p>
-        Greater Noida, Uttar Pradesh, India
-      </p>
-
-      <p>
-        info@moistcorp.com
-      </p>
-
-      <p>
-        www.moistcorp.com
-      </p>
-
-    </div>
-
-    <div className="footer-bottom">
-      <p>
-        © 2026 Moist Corp. All Rights Reserved.
-      </p>
-    </div>
-
-  </div>
-</footer>
     </main>
   );
 }
