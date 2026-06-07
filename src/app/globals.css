@@ -86,3 +86,30 @@ h1{font-size:38px}
   color: #777;
   font-size: 14px;
 }
+
+.quote-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.quote-form input,
+.quote-form select,
+.quote-form textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  background: white;
+}
+
+.quote-form textarea {
+  resize: vertical;
+}
+
+.quote-form button {
+  border: none;
+  cursor: pointer;
+}

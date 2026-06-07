@@ -131,15 +131,108 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" className="section cta">
-        <div className="container narrow">
-          <h2>Looking For A Reliable Clothing Manufacturer In India?</h2>
+      ```tsx
+<section
+  id="contact"
+  className="section cta"
+>
+  <div className="container narrow">
 
-          <a href="mailto:info@moistcorp.com" className="btn-primary">
-            Get A Quote
-          </a>
-        </div>
-      </section>
+    <h2>
+      Get A Manufacturing Quote
+    </h2>
+
+    <p>
+      Tell us about your project and our team will get back to you.
+    </p>
+
+    <form
+      action="https://formsubmit.co/irahulsig@gmail.com"
+      method="POST"
+      className="quote-form"
+    >
+
+      <input
+        type="hidden"
+        name="_subject"
+        value="New Moist Corp Website Inquiry"
+      />
+
+      <input
+        type="text"
+        name="name"
+        placeholder="Full Name"
+        required
+      />
+
+      <input
+        type="email"
+        name="email"
+        placeholder="Email Address"
+        required
+      />
+
+      <input
+        type="text"
+        name="brand"
+        placeholder="Brand Name"
+      />
+
+      <input
+        type="text"
+        name="phone"
+        placeholder="Phone Number"
+      />
+
+      <select
+        name="product"
+        required
+      >
+        <option value="">
+          Product Category
+        </option>
+
+        <option>T-Shirts</option>
+        <option>Hoodies</option>
+        <option>Sweatshirts</option>
+        <option>Joggers</option>
+        <option>Shorts</option>
+        <option>Cargo Pants</option>
+      </select>
+
+      <select
+        name="quantity"
+        required
+      >
+        <option value="">
+          Expected Quantity
+        </option>
+
+        <option>50-100 pcs</option>
+        <option>100-300 pcs</option>
+        <option>300-500 pcs</option>
+        <option>500+ pcs</option>
+      </select>
+
+      <textarea
+        name="message"
+        placeholder="Tell us about your project"
+        rows={6}
+      />
+
+      <button
+        type="submit"
+        className="btn-primary"
+      >
+        Request Quote
+      </button>
+
+    </form>
+
+  </div>
+</section>
+```
+
 
   <footer className="footer">
   <div className="container footer-simple">
