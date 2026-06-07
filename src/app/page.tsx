@@ -3,147 +3,171 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main>
-
-      {/* Header */}
-
       <header className="header">
-        <div className="container header-content">
+  <div className="container header-inner">
+    <Image
+      src="/moistcorp-logo.png"
+      alt="Moist Corp"
+      width={75}
+      height={70}
+      priority
+    />
+  </div>
+</header>
 
-          <div className="logo">
+      <section className="hero">
+        <div className="container hero-grid">
+          <div>
+            <p className="eyebrow">
+              Manufacturing Partner For Modern Apparel Brands
+            </p>
+
+            <h1>
+              Premium Clothing Manufacturer For Modern Apparel Brands
+            </h1>
+
+            <p className="hero-text">
+              Moist Corp helps apparel brands with product development,
+              sourcing, sampling, manufacturing, quality assurance and
+              logistics.
+            </p>
+
+            <div className="hero-buttons">
+              <a href="#contact" className="btn-primary">
+                Start Your Project
+              </a>
+
+              <a
+                href="/moist-corp-capability-deck.pdf"
+                target="_blank"
+                className="btn-secondary"
+              >
+                Capability Deck
+              </a>
+            </div>
+          </div>
+
+          <div>
             <Image
-              src="/moistcorp-logo.png"
-              alt="Moist Corp"
-              width={75}
-              height={70}
+              src="/factory-6.jpg"
+              alt="Moist Corp Factory"
+              width={1200}
+              height={800}
+              className="hero-image"
               priority
             />
           </div>
-
-          <nav className="nav">
-            <a href="#services">Services</a>
-            <a href="#products">Products</a>
-            <a href="#printing">Printing</a>
-            <a href="#contact">Contact</a>
-          </nav>
-
-        </div>
-      </header>
-
-      {/* Hero */}
-
-      <section className="hero">
-        <div className="container">
-
-          <h1>
-            Manufacturing Built For Modern Brands
-          </h1>
-
-          <p>
-            Moist Corp helps brands manufacture apparel,
-            merchandise, and custom products with complete
-            transparency, quality control, and supply chain support.
-          </p>
-
-          <a href="#contact" className="button">
-            Start Your Project
-          </a>
-
         </div>
       </section>
 
-      {/* Services */}
+      <section className="stats-strip">
+        <div className="container stats-grid">
+          <div>
+            <strong>46,000+</strong>
+            <span>SQ FT Infrastructure</span>
+          </div>
 
-      <section id="services" className="section grey">
+          <div>
+            <strong>98%</strong>
+            <span>On-Time Delivery</span>
+          </div>
+
+          <div>
+            <strong>&lt;35 Days</strong>
+            <span>Production Cycle</span>
+          </div>
+
+          <div>
+            <strong>50 PCS</strong>
+            <span>Starting MOQ</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" className="section grey">
         <div className="container">
+          <h2>The Moist Corp Process</h2>
 
+          <div className="grid">
+            <div className="card">01 Product Development</div>
+            <div className="card">02 Fabric & Trim Sourcing</div>
+            <div className="card">03 Sampling</div>
+            <div className="card">04 Manufacturing</div>
+            <div className="card">05 Quality Assurance</div>
+            <div className="card">06 Logistics</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" className="section">
+        <div className="container">
           <h2>Our Services</h2>
 
           <div className="grid">
-
-            <div className="card">
-              <h3>Manufacturing</h3>
-              <p>End-to-end apparel production.</p>
-            </div>
-
-            <div className="card">
-              <h3>Quality Control</h3>
-              <p>Multi-stage inspections before shipment.</p>
-            </div>
-
-            <div className="card">
-              <h3>Printing</h3>
-              <p>Premium garment decoration solutions.</p>
-            </div>
-
-            <div className="card">
-              <h3>Logistics</h3>
-              <p>Shipment coordination and tracking.</p>
-            </div>
-
+            <div className="card">Product Development</div>
+            <div className="card">Fabric & Trim Sourcing</div>
+            <div className="card">Sampling</div>
+            <div className="card">Manufacturing</div>
+            <div className="card">Quality Assurance</div>
+            <div className="card">Logistics Coordination</div>
           </div>
-
         </div>
       </section>
 
-      {/* Products */}
-
-      <section id="products" className="section">
+      <section className="section">
         <div className="container">
-
           <h2>Products We Manufacture</h2>
 
           <div className="grid">
-            <div className="card">Classic T-Shirt</div>
-            <div className="card">Boxy T-Shirt</div>
-            <div className="card">Classic Hoodie</div>
-            <div className="card">Boxy Hoodie</div>
+            <div className="card">T-Shirts</div>
+            <div className="card">Hoodies</div>
             <div className="card">Sweatshirts</div>
-            <div className="card">Tote Bags</div>
+            <div className="card">Cargo Pants</div>
+            <div className="card">Joggers</div>
+            <div className="card">Shorts</div>
+            <div className="card">Shirts</div>
+            <div className="card">Tank Tops</div>
           </div>
-
         </div>
       </section>
 
-      {/* Printing */}
+      <section id="contact" className="section cta">
+        <div className="container narrow">
+          <h2>Looking For A Reliable Clothing Manufacturer In India?</h2>
 
-      <section id="printing" className="section grey">
-        <div className="container">
-
-          <h2>Printing Techniques</h2>
-
-          <div className="grid">
-            <div className="card">Digital Printing</div>
-            <div className="card">Screen Printing</div>
-            <div className="card">Puff Printing</div>
-            <div className="card">Embroidery</div>
-            <div className="card">3D Embroidery</div>
-            <div className="card">Reflective Heat Transfer</div>
-          </div>
-
-        </div>
-      </section>
-
-      {/* Contact */}
-
-      <section id="contact" className="section contact">
-        <div className="container">
-
-          <h2>Let's Build Your Next Collection</h2>
-
-          <p>
-            Get in touch to discuss your manufacturing requirements.
-          </p>
-
-          <a
-            href="mailto:info@moistcorp.com"
-            className="button"
-          >
-            Contact Us
+          <a href="mailto:info@moistcorp.com" className="btn-primary">
+            Get A Quote
           </a>
-
         </div>
       </section>
 
+  <footer className="footer">
+  <div className="container footer-simple">
+
+    <div className="footer-contact">
+
+      <p>
+        Greater Noida, Uttar Pradesh, India
+      </p>
+
+      <p>
+        info@moistcorp.com
+      </p>
+
+      <p>
+        www.moistcorp.com
+      </p>
+
+    </div>
+
+    <div className="footer-bottom">
+      <p>
+        © 2026 Moist Corp. All Rights Reserved.
+      </p>
+    </div>
+
+  </div>
+</footer>
     </main>
   );
 }
