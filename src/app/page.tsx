@@ -16,7 +16,7 @@ export default function Home() {
             </h1>
 
             <p className="hero-text">
-              MFrom product development and fabric sourcing to sampling, manufacturing, quality control and delivery — Moist Corp manages the full production process so you don't have to.
+              From product development and fabric sourcing to sampling, manufacturing, quality control and delivery — Moist Corp manages the full production process so you don't have to.
             </p>
 
             <div className="hero-buttons">
@@ -154,7 +154,7 @@ export default function Home() {
             </div>
 
             <div className="gallery-item">
-              <Image src="/products/shorts.jpg" alt="Shorts" width={600} height={750} />
+              <Image src="/products/shorts.webp" alt="Shorts" width={600} height={750} />
               <div className="gallery-tags">
                 <span className="gallery-tag">Shorts</span>
               </div>

@@ -14,7 +14,7 @@ const categories = [
     name: "Shorts",
     slug: "shorts",
     images: [
-      { src: "/products/shorts-1.jpg", brand: "" },
+      { src: "/products/shorts-1.webp", brand: "" },
       { src: "/products/shorts-2.jpg", brand: "" },
       { src: "/products/shorts-3.jpg", brand: "" },
     ],
@@ -27,24 +27,7 @@ const categories = [
       { src: "/products/cargo-2.jpg", brand: "" },
     ],
   },
-  {
-    name: "Shirts",
-    slug: "shirts",
-    images: [
-      { src: "/products/shirts-1.jpg", brand: "" },
-      { src: "/products/shirts-2.jpg", brand: "" },
-      { src: "/products/shirts-3.jpg", brand: "" },
-    ],
-  },
-  {
-    name: "Joggers",
-    slug: "joggers",
-    images: [
-      { src: "/products/joggers-1.jpg", brand: "" },
-      { src: "/products/joggers-2.jpg", brand: "" },
-      { src: "/products/joggers-3.jpg", brand: "" },
-    ],
-  },
+  
   {
     name: "Sweatshirts",
     slug: "sweatshirts",
@@ -63,33 +46,8 @@ const categories = [
       { src: "/products/hoodies-3.jpg", brand: "" },
     ],
   },
-  {
-    name: "Tank Tops",
-    slug: "tank-tops",
-    images: [
-      { src: "/products/tanktops-1.jpg", brand: "" },
-      { src: "/products/tanktops-2.jpg", brand: "" },
-      { src: "/products/tanktops-3.jpg", brand: "" },
-    ],
-  },
-  {
-    name: "Baby Tees",
-    slug: "baby-tees",
-    images: [
-      { src: "/products/babytees-1.jpg", brand: "" },
-      { src: "/products/babytees-2.jpg", brand: "" },
-      { src: "/products/babytees-3.jpg", brand: "" },
-    ],
-  },
-  {
-    name: "Skirts",
-    slug: "skirts",
-    images: [
-      { src: "/products/skirts-1.jpg", brand: "" },
-      { src: "/products/skirts-2.jpg", brand: "" },
-      { src: "/products/skirts-3.jpg", brand: "" },
-    ],
-  },
+  
+  
   {
     name: "Tote Bags",
     slug: "tote-bags",
