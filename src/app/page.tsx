@@ -8,17 +8,15 @@ export default function Home() {
         <div className="container hero-grid">
           <div>
             <p className="eyebrow">
-              Manufacturing Partner For Modern Apparel Brands
+              Clothing Manufacturer India
             </p>
 
             <h1>
-              Premium Clothing Manufacturer For Modern Apparel Brands
+              We Build Supply Chains For Apparel Brands
             </h1>
 
             <p className="hero-text">
-              Moist Corp helps apparel brands with product development,
-              sourcing, sampling, manufacturing, quality assurance and
-              logistics.
+              MFrom product development and fabric sourcing to sampling, manufacturing, quality control and delivery — Moist Corp manages the full production process so you don't have to.
             </p>
 
             <div className="hero-buttons">
