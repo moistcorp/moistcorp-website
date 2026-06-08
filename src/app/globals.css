@@ -169,7 +169,7 @@ h1 {
 }
 
 .grey {
-  background: #f7f7f7;
+  
 }
 
 /* CARDS */
@@ -308,5 +308,246 @@ h1 {
     text-decoration: none;
     color: #111;
     font-weight: 500;
+  }
+}
+.contact-form {
+  margin-top: 40px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.form-grid label,
+.message-field label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.form-grid input,
+.form-grid select,
+.message-field textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #fff;
+}
+
+.message-field {
+  margin-top: 24px;
+}
+
+.message-field textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+/* CONTACT PAGE LAYOUT */
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.contact-left h1 {
+  margin-bottom: 24px;
+}
+
+.contact-left .hero-text {
+  margin-bottom: 16px;
+}
+
+.contact-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 40px;
+}
+
+.contact-right h2 {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* MOIST CORP MODEL SECTION */
+
+.model-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.model-text h2 {
+  margin-bottom: 24px;
+}
+
+.model-text p {
+  margin-bottom: 16px;
+  color: #333;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.model-list {
+  list-style: none;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.model-list li {
+  font-size: 17px;
+  font-weight: 500;
+  padding-left: 4px;
+}
+
+.model-list li::before {
+  content: "✓ ";
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .model-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* PRODUCT GALLERY */
+
+.product-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #f0f0f0;
+  aspect-ratio: 4 / 5;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.03);
+}
+
+.gallery-tags {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.gallery-tag {
+  background: #fff;
+  color: #111;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.gallery-cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .product-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* PRODUCTS PAGE */
+
+.products-heading {
+  font-size: 58px;
+  margin-bottom: 12px;
+}
+
+.products-subheading {
+  font-size: 18px;
+  color: #555;
+}
+
+.products-category {
+  padding: 60px 0;
+  border-top: 1px solid #eee;
+}
+
+.category-title {
+  font-size: 32px;
+  margin-bottom: 28px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.products-grid-item {
+  background: #f5f5f5;
+  border-radius: 10px;
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  position: relative;
+}
+
+.products-grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.products-grid-item:hover img {
+  transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .products-heading {
+    font-size: 38px;
   }
 }

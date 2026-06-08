@@ -22,7 +22,7 @@ export default function Home() {
             </p>
 
             <div className="hero-buttons">
-              <a href="#contact" className="btn-primary">
+              <a href="/contact" className="btn-primary">
                 Start Your Project
               </a>
 
@@ -73,152 +73,105 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="process" className="section">
-        <div className="container">
-          <h2>The Moist Corp Process</h2>
+      {/* THE MOIST CORP MODEL */}
+      <section id="model" className="section">
+        <div className="container model-grid">
 
-          <div className="grid">
-            <div className="card">01 Product Development</div>
-            <div className="card">02 Fabric & Trim Sourcing</div>
-            <div className="card">03 Sampling</div>
-            <div className="card">04 Manufacturing</div>
-            <div className="card">05 Quality Assurance</div>
-            <div className="card">06 Logistics</div>
+          <div className="model-text">
+            <h2>The Moist Corp Model</h2>
+
+            <p>Most brands coordinate multiple production partners.</p>
+            <p>We coordinate the entire ecosystem.</p>
+
+            <p>
+              Rather than relying on a single factory, Moist Corp builds
+              product-specific supply chains by combining specialist
+              manufacturers, quality systems and production oversight
+              into one streamlined process.
+            </p>
+
+            <p>This creates:</p>
+
+            <ul className="model-list">
+              <li>Better Quality</li>
+              <li>Faster Development</li>
+              <li>Higher Visibility</li>
+              <li>Lower Risk</li>
+              <li>Scalable Production</li>
+            </ul>
           </div>
+
+          <div>
+            <Image
+              src="/factory-5.jpg"
+              alt="Moist Corp Model"
+              width={800}
+              height={600}
+              className="hero-image"
+            />
+          </div>
+
         </div>
       </section>
 
-      <section id="services" className="section">
-        <div className="container">
-          <h2>Our Services</h2>
-
-          <div className="grid">
-            <div className="card">Product Development</div>
-            <div className="card">Fabric & Trim Sourcing</div>
-            <div className="card">Sampling</div>
-            <div className="card">Manufacturing</div>
-            <div className="card">Quality Assurance</div>
-            <div className="card">Logistics Coordination</div>
-          </div>
-        </div>
-      </section>
-
+      {/* PRODUCT GALLERY */}
       <section className="section">
         <div className="container">
           <h2>Products We Manufacture</h2>
 
-          <div className="grid">
-            <div className="card">T-Shirts</div>
-            <div className="card">Hoodies</div>
-            <div className="card">Sweatshirts</div>
-            <div className="card">Cargo Pants</div>
-            <div className="card">Joggers</div>
-            <div className="card">Shorts</div>
-            <div className="card">Shirts</div>
-            <div className="card">Tank Tops</div>
+          <div className="product-gallery">
+            <div className="gallery-item">
+              <Image src="/products/tshirt.webp" alt="T-Shirts" width={600} height={750} />
+              <div className="gallery-tags">
+                <span className="gallery-tag">T-Shirts</span>
+              </div>
+            </div>
+
+            <div className="gallery-item">
+              <Image src="/products/hoodie.jpg" alt="Hoodies" width={600} height={750} />
+              <div className="gallery-tags">
+                <span className="gallery-tag">Hoodies</span>
+              </div>
+            </div>
+
+            <div className="gallery-item">
+              <Image src="/products/sweatshirt.jpg" alt="Sweatshirts" width={600} height={750} />
+              <div className="gallery-tags">
+                <span className="gallery-tag">Sweatshirts</span>
+              </div>
+            </div>
+
+            <div className="gallery-item">
+              <Image src="/products/cargo.jpg" alt="Cargo Pants" width={600} height={750} />
+              <div className="gallery-tags">
+                <span className="gallery-tag">Cargo Pants</span>
+              </div>
+            </div>
+
+            <div className="gallery-item">
+              <Image src="/products/totebag.webp" alt="Tote Bags" width={600} height={750} />
+              <div className="gallery-tags">
+                <span className="gallery-tag">Tote Bags</span>
+              </div>
+            </div>
+
+            <div className="gallery-item">
+              <Image src="/products/shorts.jpg" alt="Shorts" width={600} height={750} />
+              <div className="gallery-tags">
+                <span className="gallery-tag">Shorts</span>
+              </div>
+            </div>
           </div>
+
+          <div className="gallery-cta">
+            <a href="/products" className="btn-secondary">
+              View All Products
+            </a>
+          </div>
+
         </div>
       </section>
-      
-<section
-  id="contact"
-  className="section cta"
->
-  <div className="container narrow">
 
-    <h2>
-      Get A Manufacturing Quote
-    </h2>
-
-    <p>
-      Tell us about your project and our team will get back to you.
-    </p>
-
-    <form
-      action="https://formsubmit.co/irahulsig@gmail.com"
-      method="POST"
-      className="quote-form"
-    >
-
-      <input
-        type="hidden"
-        name="_subject"
-        value="New Moist Corp Website Inquiry"
-      />
-
-      <input
-        type="text"
-        name="name"
-        placeholder="Full Name"
-        required
-      />
-
-      <input
-        type="email"
-        name="email"
-        placeholder="Email Address"
-        required
-      />
-
-      <input
-        type="text"
-        name="brand"
-        placeholder="Brand Name"
-      />
-
-      <input
-        type="text"
-        name="phone"
-        placeholder="Phone Number"
-      />
-
-      <select
-        name="product"
-        required
-      >
-        <option value="">
-          Product Category
-        </option>
-
-        <option>T-Shirts</option>
-        <option>Hoodies</option>
-        <option>Sweatshirts</option>
-        <option>Joggers</option>
-        <option>Shorts</option>
-        <option>Cargo Pants</option>
-      </select>
-
-      <select
-        name="quantity"
-        required
-      >
-        <option value="">
-          Expected Quantity
-        </option>
-
-        <option>50-100 pcs</option>
-        <option>100-300 pcs</option>
-        <option>300-500 pcs</option>
-        <option>500+ pcs</option>
-      </select>
-
-      <textarea
-        name="message"
-        placeholder="Tell us about your project"
-        rows={6}
-      />
-
-      <button
-        type="submit"
-        className="btn-primary"
-      >
-        Request Quote
-      </button>
-
-    </form>
-
-  </div>
-</section>
     </main>
   );
 }

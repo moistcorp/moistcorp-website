@@ -1,0 +1,153 @@
+import Image from "next/image";
+
+const categories = [
+  {
+    name: "T-Shirts",
+    slug: "tshirts",
+    images: [
+      { src: "/products/tshirts-1.jpg", brand: "" },
+      { src: "/products/tshirts-2.jpg", brand: "" },
+      { src: "/products/tshirts-3.jpg", brand: "" },
+    ],
+  },
+  {
+    name: "Shorts",
+    slug: "shorts",
+    images: [
+      { src: "/products/shorts-1.jpg", brand: "" },
+      { src: "/products/shorts-2.jpg", brand: "" },
+      { src: "/products/shorts-3.jpg", brand: "" },
+    ],
+  },
+  {
+    name: "Cargo Pants",
+    slug: "cargo-pants",
+    images: [
+      { src: "/products/cargo-1.jpg", brand: "" },
+      { src: "/products/cargo-2.jpg", brand: "" },
+    ],
+  },
+  {
+    name: "Shirts",
+    slug: "shirts",
+    images: [
+      { src: "/products/shirts-1.jpg", brand: "" },
+      { src: "/products/shirts-2.jpg", brand: "" },
+      { src: "/products/shirts-3.jpg", brand: "" },
+    ],
+  },
+  {
+    name: "Joggers",
+    slug: "joggers",
+    images: [
+      { src: "/products/joggers-1.jpg", brand: "" },
+      { src: "/products/joggers-2.jpg", brand: "" },
+      { src: "/products/joggers-3.jpg", brand: "" },
+    ],
+  },
+  {
+    name: "Sweatshirts",
+    slug: "sweatshirts",
+    images: [
+      { src: "/products/sweatshirts-1.jpg", brand: "" },
+      { src: "/products/sweatshirts-2.jpg", brand: "" },
+      { src: "/products/sweatshirts-3.jpg", brand: "" },
+    ],
+  },
+  {
+    name: "Hoodies",
+    slug: "hoodies",
+    images: [
+      { src: "/products/hoodies-1.jpg", brand: "" },
+      { src: "/products/hoodies-2.jpg", brand: "" },
+      { src: "/products/hoodies-3.jpg", brand: "" },
+    ],
+  },
+  {
+    name: "Tank Tops",
+    slug: "tank-tops",
+    images: [
+      { src: "/products/tanktops-1.jpg", brand: "" },
+      { src: "/products/tanktops-2.jpg", brand: "" },
+      { src: "/products/tanktops-3.jpg", brand: "" },
+    ],
+  },
+  {
+    name: "Baby Tees",
+    slug: "baby-tees",
+    images: [
+      { src: "/products/babytees-1.jpg", brand: "" },
+      { src: "/products/babytees-2.jpg", brand: "" },
+      { src: "/products/babytees-3.jpg", brand: "" },
+    ],
+  },
+  {
+    name: "Skirts",
+    slug: "skirts",
+    images: [
+      { src: "/products/skirts-1.jpg", brand: "" },
+      { src: "/products/skirts-2.jpg", brand: "" },
+      { src: "/products/skirts-3.jpg", brand: "" },
+    ],
+  },
+  {
+    name: "Tote Bags",
+    slug: "tote-bags",
+    images: [
+      { src: "/products/totebag.webp", brand: "" },
+    ],
+  },
+];
+
+export default function ProductsPage() {
+  return (
+    <main>
+
+      <section className="section">
+        <div className="container">
+
+          <h1 className="products-heading">Products</h1>
+          <p className="products-subheading">
+            Everything we manufacture, built to your spec.
+          </p>
+
+        </div>
+      </section>
+
+      {categories.map((cat) => (
+        <section key={cat.slug} className="products-category">
+          <div className="container">
+
+            <h2 className="category-title">{cat.name}</h2>
+
+            <div className="products-grid">
+              {cat.images.map((img, i) => (
+                <div key={i} className="products-grid-item">
+                  <Image
+                    src={img.src}
+                    alt={`${cat.name} ${i + 1}`}
+                    width={600}
+                    height={750}
+                  />
+                </div>
+              ))}
+            </div>
+
+          </div>
+        </section>
+      ))}
+
+      <section className="section">
+        <div className="container" style={{ textAlign: "center" }}>
+          <p style={{ marginBottom: "24px", fontSize: "18px", color: "#555" }}>
+            Don't see what you're looking for? We manufacture custom products too.
+          </p>
+          <a href="/contact" className="btn-primary">
+            Start Your Project
+          </a>
+        </div>
+      </section>
+
+    </main>
+  );
+}
