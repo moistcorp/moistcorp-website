@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
+import Header from "./components/header";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -18,61 +17,47 @@ export default function RootLayout({
     <html lang="en">
       <body>
 
-        {/* HEADER */}
-
-        <header className="header">
-          <div className="container header-inner">
-
-            <Link href="/">
-              <Image
-                src="/moistcorp-logo.png"
-                alt="Moist Corp"
-                width={85}
-                height={80}
-                priority
-              />
-            </Link>
-
-            <nav className="nav">
-              <Link href="/about">About</Link>
-            </nav>
-
-          </div>
-        </header>
-
-        {/* PAGE CONTENT */}
+        <Header />
 
         {children}
 
-        {/* FOOTER */}
+        <footer className="footer">
+          <div className="container">
 
- <footer className="footer">
-  <div className="container footer-simple">
+            <div className="footer-content">
 
-    <div className="footer-contact">
+              <p>Greater Noida, Uttar Pradesh, India</p>
 
-      <p>
-        Greater Noida, Uttar Pradesh, India
-      </p>
+              <p>info@moistcorp.com</p>
 
-      <p>
-        info@moistcorp.com
-      </p>
+              <p>www.moistcorp.com</p>
 
-      <p>
-        www.moistcorp.com
-      </p>
+              <div className="social-links">
+                <a
+                  href="https://instagram.com/moist.corp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Instagram
+                </a>
 
-    </div>
+                <a
+                  href="https://linkedin.com/company/moist-corp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn
+                </a>
+              </div>
 
-    <div className="footer-bottom">
-      <p>
-        © 2026 Moist Corp. All Rights Reserved.
-      </p>
-    </div>
+            </div>
 
-  </div>
-</footer>
+            <div className="footer-bottom">
+              <p>© 2026 Moist Corp. All Rights Reserved.</p>
+            </div>
+
+          </div>
+        </footer>
 
       </body>
     </html>
