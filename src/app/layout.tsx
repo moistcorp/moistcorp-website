@@ -27,9 +27,7 @@ export default function RootLayout({
             <div className="footer-content">
 
               <p>Greater Noida, Uttar Pradesh, India</p>
-
               <p>info@moistcorp.com</p>
-
               <p>www.moistcorp.com</p>
 
               <div className="social-links">
@@ -54,6 +52,10 @@ export default function RootLayout({
 
             <div className="footer-bottom">
               <p>© 2026 Moist Corp. All Rights Reserved.</p>
+              <div className="footer-legal">
+                <a href="/privacy-policy">Privacy Policy</a>
+                <a href="/terms">Terms &amp; Conditions</a>
+              </div>
             </div>
 
           </div>

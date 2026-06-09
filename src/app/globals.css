@@ -686,3 +686,22 @@ h1 {
     font-size: 16px;
   }
 }
+
+/* FOOTER LEGAL LINKS */
+
+.footer-legal {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 10px;
+}
+
+.footer-legal a {
+  font-size: 13px;
+  color: #999;
+  text-decoration: none;
+}
+
+.footer-legal a:hover {
+  color: #111;
+}
