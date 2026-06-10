@@ -228,47 +228,33 @@ h1 {
 
 /* FOOTER */
 
-.footer {
-  background: #fff;
-  padding: 60px 0 30px;
+.footer-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 24px;
 }
 
-.footer-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+.footer-col p {
+  margin: 6px 0;
+  color: #555;
+  font-size: 14px;
 }
 
-.footer-content p {
-  margin: 8px 0;
+.footer-company-name {
+  font-weight: 700;
+  font-size: 16px !important;
+  color: #111 !important;
+  margin-bottom: 12px !important;
 }
 
-.social-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-  margin-top: 20px;
-}
-
-.social-links a {
-  color: #111;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.social-links a:hover {
-  opacity: 0.7;
-}
-
-.footer-bottom {
-  margin-top: 30px;
-  text-align: center;
-}
-
-.footer-bottom p {
-  margin: 0;
+@media (max-width: 768px) {
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
 }
 
 /* MOBILE */
