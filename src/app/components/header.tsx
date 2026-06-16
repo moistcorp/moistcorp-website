@@ -13,10 +13,10 @@ export default function Header() {
 
         <Link href="/">
           <Image
-            src="/moistcorp-logo.png"
+            src="/logo2.png"
             alt="Moist Corp"
-            width={75}
-            height={70}
+            width={95}
+            height={90}
             priority
           />
         </Link>
