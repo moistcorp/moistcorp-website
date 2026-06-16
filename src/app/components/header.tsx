@@ -24,7 +24,7 @@ export default function Header() {
 
         <Link href="/" onClick={() => setMenuOpen(false)}>
           <Image
-            src="/logo.png"
+            src="/logo2.png"
             alt="Moist Corp"
             width={120}
             height={40}
