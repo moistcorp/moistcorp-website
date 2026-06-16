@@ -27,7 +27,7 @@ export default function RootLayout({
             <div className="footer-top">
 
               <div className="footer-col">
-                <p>Greater Noida, Uttar Pradesh, India</p>
+                <p className="footer-company-name">Moist Corp</p>
                 <p>info@moistcorp.com</p>
                 <p>www.moistcorp.com</p>
                 <div className="social-links">

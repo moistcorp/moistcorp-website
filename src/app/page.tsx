@@ -18,7 +18,7 @@ export default function Home() {
 
             <p className="hero-text">
               From product development and fabric sourcing to sampling,
-              manufacturing, quality control and delivery — Moist Corp
+              manufacturing, quality control and delivery - Moist Corp
               manages the full production process so you don't have to.
             </p>
 
@@ -98,7 +98,7 @@ export default function Home() {
               <p className="card-desc">
                 Launching your first collection? We work with founders from
                 sampling through to bulk production, with a starting MOQ of
-                just 50 pieces. No experience needed — we guide you through
+                just 50 pieces. No experience needed - we guide you through
                 the full process.
               </p>
             </div>
@@ -108,7 +108,7 @@ export default function Home() {
               <p className="card-desc">
                 Already running but need a more reliable production partner?
                 We plug into your existing workflow and deliver consistent
-                quality at volume — with timelines you can actually build
+                quality at volume - with timelines you can actually build
                 a launch calendar around.
               </p>
             </div>
@@ -117,8 +117,8 @@ export default function Home() {
               <h3 className="card-title">Companies & Cafes</h3>
               <p className="card-desc">
                 Need branded merch, staff uniforms, or welcome kits? We
-                handle custom apparel for businesses — hoodies, tees, tote
-                bags and more — with small runs welcome from 50 pieces.
+                handle custom apparel for businesses - hoodies, tees, tote
+                bags and more - with small runs welcome from 50 pieces.
               </p>
             </div>
           </div>
@@ -147,10 +147,10 @@ export default function Home() {
             <div className="compare-col compare-new">
               <h3 className="compare-heading">The Moist Corp Way</h3>
               <ul className="compare-list">
-                <li>Start from 50 pieces — scale as you grow</li>
+                <li>Start from 50 pieces - scale as you grow</li>
                 <li>Production cycle confirmed before order is placed</li>
                 <li>Full transparency at every stage of production</li>
-                <li>Proactive communication — you are never left waiting</li>
+                <li>Proactive communication - you are never left waiting</li>
                 <li>98% on-time delivery, under 35 days</li>
                 <li>One partner handles the entire process end to end</li>
               </ul>
@@ -283,7 +283,7 @@ export default function Home() {
               <h3 className="faq-question">Do you work with first-time brand founders?</h3>
               <p className="faq-answer">
                 Yes. A significant part of our work is with founders launching
-                their first collection. We guide you through the full process —
+                their first collection. We guide you through the full process -
                 from technical specifications and sampling through to bulk
                 production and delivery.
               </p>
@@ -303,7 +303,7 @@ export default function Home() {
               <h3 className="faq-question">Can I visit the factory?</h3>
               <p className="faq-answer">
                 Yes. Our facility is based in Greater Noida, Uttar Pradesh.
-                We welcome client visits — reach out through the contact page
+                We welcome client visits - reach out through the contact page
                 to arrange a time.
               </p>
             </div>
