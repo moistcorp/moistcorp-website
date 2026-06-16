@@ -26,8 +26,8 @@ export default function Header() {
           <Image
             src="/logo2.png"
             alt="Moist Corp"
-            width={120}
-            height={40}
+            width={70}
+            height={70}
             priority
           />
         </Link>

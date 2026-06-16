@@ -9,7 +9,7 @@ export default function Home() {
         <div className="container hero-grid">
           <div>
             <p className="eyebrow">
-              Clothing Manufacturer India — Greater Noida
+              Clothing Manufacturer India - Greater Noida
             </p>
 
             <h1>
@@ -239,7 +239,7 @@ export default function Home() {
             </div>
 
             <div className="gallery-item">
-              <Image src="/products/shorts.jpg" alt="Shorts" width={600} height={750} />
+              <Image src="/products/shorts6.jpg" alt="Shorts" width={600} height={750} />
               <div className="gallery-tags">
                 <span className="gallery-tag">Shorts</span>
               </div>
