@@ -75,7 +75,6 @@ body {
   grid-template-columns: 1.1fr 1fr;
   gap: 50px;
   align-items: center;
-  min-height: 70vh;
 }
 
 .eyebrow {
@@ -853,7 +852,7 @@ h1 {
 
 .hero-trust {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 20px;
   margin-top: 20px;
   align-items: center;
@@ -863,7 +862,6 @@ h1 {
   font-size: 13px;
   color: #555;
   font-weight: 500;
-  white-space: nowrap;
 }
 
 /* SOCIAL PROOF STRIP */
