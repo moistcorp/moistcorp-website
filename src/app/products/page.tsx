@@ -52,7 +52,7 @@ const categories = [
     name: "Tote Bags",
     slug: "tote-bags",
     images: [
-      { src: "/products/totebag.webp", brand: "" },
+      { src: "/products/totebag.jpg", brand: "" },
     ],
   },
 ];
