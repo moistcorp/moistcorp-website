@@ -13,6 +13,7 @@ const categories = [
       { src: "/products/tshirts-6.jpg", brand: "" },
       { src: "/products/tshirts-7.jpg", brand: "" },
       { src: "/products/tshirts-8.jpg", brand: "" },
+      { src: "/products/tshirts-9.jpg", brand: "" },
     ],
   },
   {
