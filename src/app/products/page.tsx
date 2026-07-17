@@ -8,6 +8,11 @@ const categories = [
       { src: "/products/tshirts-1.jpg", brand: "" },
       { src: "/products/tshirts-2.jpg", brand: "" },
       { src: "/products/tshirts-3.jpg", brand: "" },
+      { src: "/products/tshirts-4.jpg", brand: "" },
+      { src: "/products/tshirts-5.jpg", brand: "" },
+      { src: "/products/tshirts-6.jpg", brand: "" },
+      { src: "/products/tshirts-7.jpg", brand: "" },
+      { src: "/products/tshirts-8.jpg", brand: "" },
     ],
   },
   {
@@ -35,6 +40,9 @@ const categories = [
       { src: "/products/sweatshirts-1.jpg", brand: "" },
       { src: "/products/sweatshirts-2.jpg", brand: "" },
       { src: "/products/sweatshirts-3.jpg", brand: "" },
+      { src: "/products/sweatshirts-4.jpg", brand: "" },
+      { src: "/products/sweatshirts-5.jpg", brand: "" },
+      { src: "/products/sweatshirts-6.jpg", brand: "" },
     ],
   },
   {
@@ -44,6 +52,7 @@ const categories = [
       { src: "/products/hoodies-1.jpg", brand: "" },
       { src: "/products/hoodies-2.jpg", brand: "" },
       { src: "/products/hoodies-3.jpg", brand: "" },
+      { src: "/products/hoodies-4.jpg", brand: "" },
     ],
   },
   

@@ -186,7 +186,7 @@ export default function Home() {
 
           <div>
             <Image
-              src="/factory-5.jpg"
+              src="/factory-4.jpg"
               alt="Moist Corp Model"
               width={800}
               height={600}

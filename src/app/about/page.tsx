@@ -21,7 +21,7 @@ export default function AboutPage() {
               We Build Supply Chains For Apparel Brands
             </h1>
             <p className="hero-text">
-              A clothing manufacturer in Greater Noida built around one idea -
+              A clothing manufacturer in India built around one idea -
               that apparel brands deserve a production partner that actually
               delivers what it promises.
             </p>
