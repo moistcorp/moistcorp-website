@@ -5,6 +5,24 @@ export const metadata: Metadata = {
   title: "Why Inventory Is One of Fashion's Biggest Financial Risks | Moist Corp",
   description:
     "Unsold inventory is the silent margin killer for apparel brands. Learn how supply chain structure — not just bad forecasting — creates inventory risk, and how shorter production cycles with an integrated clothing manufacturer can reduce it.",
+  alternates: {
+    canonical: "https://moistcorp.com/blog/inventory-financial-risk-apparel-brands",
+  },
+  openGraph: {
+    title: "Why Inventory Is One of Fashion's Biggest Financial Risks | Moist Corp",
+    description:
+      "Unsold inventory is the silent margin killer for apparel brands. How supply chain structure — not just bad forecasting — creates inventory risk.",
+    url: "https://moistcorp.com/blog/inventory-financial-risk-apparel-brands",
+    siteName: "Moist Corp",
+    locale: "en_IN",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Why Inventory Is One of Fashion's Biggest Financial Risks | Moist Corp",
+    description:
+      "Unsold inventory is the silent margin killer for apparel brands. How supply chain structure creates inventory risk.",
+  },
 };
 
 export default function BlogPostInventory() {

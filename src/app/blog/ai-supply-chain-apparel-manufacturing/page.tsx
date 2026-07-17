@@ -4,6 +4,24 @@ export const metadata: Metadata = {
   title: "Why AI Is Exposing the Broken Supply Chain Model in Apparel Manufacturing | Moist Corp",
   description:
     "AI is revealing a critical gap in how clothing brands manage their supply chains. Learn why faster insight without integrated manufacturing partners creates more risk, not less — and what modern apparel brands are doing differently.",
+  alternates: {
+    canonical: "https://moistcorp.com/blog/ai-supply-chain-apparel-manufacturing",
+  },
+  openGraph: {
+    title: "Why AI Is Exposing the Broken Supply Chain Model in Apparel Manufacturing | Moist Corp",
+    description:
+      "AI is revealing a critical gap in how clothing brands manage their supply chains — and why faster insight without integrated manufacturing partners creates more risk, not less.",
+    url: "https://moistcorp.com/blog/ai-supply-chain-apparel-manufacturing",
+    siteName: "Moist Corp",
+    locale: "en_IN",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Why AI Is Exposing the Broken Supply Chain Model in Apparel Manufacturing | Moist Corp",
+    description:
+      "AI is revealing a critical gap in how clothing brands manage their supply chains — and what modern apparel brands are doing differently.",
+  },
 };
 
 export default function BlogPost() {

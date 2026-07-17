@@ -5,6 +5,26 @@ export const metadata: Metadata = {
   title: "About Us | Moist Corp — Clothing Manufacturer India",
   description:
     "Moist Corp is a clothing manufacturer based in Greater Noida, India, built to solve the MOQ, transparency and timeline problems that hold apparel brands back.",
+  alternates: {
+    canonical: "https://moistcorp.com/about",
+  },
+  openGraph: {
+    title: "About Us | Moist Corp — Clothing Manufacturer India",
+    description:
+      "Moist Corp is a clothing manufacturer based in Greater Noida, India, built to solve the MOQ, transparency and timeline problems that hold apparel brands back.",
+    url: "https://moistcorp.com/about",
+    siteName: "Moist Corp",
+    images: ["/factory-1.jpg"],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Us | Moist Corp — Clothing Manufacturer India",
+    description:
+      "Moist Corp is a clothing manufacturer based in Greater Noida, India, built to solve the MOQ, transparency and timeline problems that hold apparel brands back.",
+    images: ["/factory-1.jpg"],
+  },
 };
 
 export default function AboutPage() {

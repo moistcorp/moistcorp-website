@@ -1,4 +1,29 @@
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Blog | Apparel Manufacturing Insights — Moist Corp",
+  description:
+    "Insights on apparel manufacturing, supply chain risk and building better clothing brands, from the Moist Corp team in Greater Noida, India.",
+  alternates: {
+    canonical: "https://moistcorp.com/blog",
+  },
+  openGraph: {
+    title: "Blog | Apparel Manufacturing Insights — Moist Corp",
+    description:
+      "Insights on apparel manufacturing, supply chain risk and building better clothing brands, from the Moist Corp team.",
+    url: "https://moistcorp.com/blog",
+    siteName: "Moist Corp",
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog | Apparel Manufacturing Insights — Moist Corp",
+    description:
+      "Insights on apparel manufacturing, supply chain risk and building better clothing brands, from the Moist Corp team.",
+  },
+};
 
 const posts = [
   {

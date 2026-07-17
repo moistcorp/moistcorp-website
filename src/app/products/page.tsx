@@ -1,4 +1,31 @@
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Custom Clothing Manufacturing | T-Shirts, Hoodies & More — Moist Corp",
+  description:
+    "Browse the apparel categories Moist Corp manufactures — custom t-shirts, hoodies, sweatshirts, cargo pants, shorts and tote bags. Private label and bulk production from our Greater Noida, India facility.",
+  alternates: {
+    canonical: "https://moistcorp.com/products",
+  },
+  openGraph: {
+    title: "Custom Clothing Manufacturing | Moist Corp",
+    description:
+      "Custom t-shirts, hoodies, sweatshirts, cargo pants, shorts and tote bags — private label and bulk apparel manufacturing from Greater Noida, India.",
+    url: "https://moistcorp.com/products",
+    siteName: "Moist Corp",
+    images: ["/product-4.jpg"],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Custom Clothing Manufacturing | Moist Corp",
+    description:
+      "Custom t-shirts, hoodies, sweatshirts, cargo pants, shorts and tote bags — private label and bulk apparel manufacturing from Greater Noida, India.",
+    images: ["/product-4.jpg"],
+  },
+};
 
 const categories = [
   {

@@ -3,9 +3,72 @@ import Header from "./components/header";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Moist Corp | Clothing Manufacturer India",
+  metadataBase: new URL("https://moistcorp.com"),
+  title: {
+    default: "Moist Corp | Clothing Manufacturer India",
+    template: "%s",
+  },
   description:
     "Moist Corp is a clothing manufacturer helping apparel brands with product development, sourcing, manufacturing, quality assurance and logistics.",
+  keywords: [
+    "clothing manufacturer India",
+    "apparel manufacturer India",
+    "custom clothing manufacturing",
+    "private label clothing manufacturer",
+    "t-shirt manufacturer India",
+    "hoodie manufacturer India",
+    "Greater Noida clothing manufacturer",
+  ],
+  alternates: {
+    canonical: "https://moistcorp.com",
+  },
+  openGraph: {
+    title: "Moist Corp | Clothing Manufacturer India",
+    description:
+      "Moist Corp is a clothing manufacturer helping apparel brands with product development, sourcing, manufacturing, quality assurance and logistics.",
+    url: "https://moistcorp.com",
+    siteName: "Moist Corp",
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Moist Corp | Clothing Manufacturer India",
+    description:
+      "Moist Corp is a clothing manufacturer helping apparel brands with product development, sourcing, manufacturing, quality assurance and logistics.",
+  },
+};
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  additionalType: "https://schema.org/Manufacturer",
+  name: "Moist Corp",
+  url: "https://moistcorp.com",
+  logo: "https://moistcorp.com/logo2.png",
+  description:
+    "Moist Corp is a clothing manufacturer helping apparel brands with product development, sourcing, manufacturing, quality assurance and logistics.",
+  email: "info@moistcorp.com",
+  address: [
+    {
+      "@type": "PostalAddress",
+      streetAddress: "K-320",
+      addressLocality: "Greater Noida",
+      addressRegion: "Uttar Pradesh",
+      addressCountry: "IN",
+    },
+    {
+      "@type": "PostalAddress",
+      streetAddress: "Q-5",
+      addressLocality: "Greater Noida",
+      addressRegion: "Uttar Pradesh",
+      addressCountry: "IN",
+    },
+  ],
+  sameAs: [
+    "https://instagram.com/moist.corp",
+    "https://linkedin.com/company/moist-corp",
+  ],
 };
 
 export default function RootLayout({
@@ -16,6 +79,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+
+        <script
+          type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
 
         <Header />
 

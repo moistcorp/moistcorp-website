@@ -1,4 +1,31 @@
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Contact Us | Moist Corp — Clothing Manufacturer India",
+  description:
+    "Get in touch with Moist Corp to start your apparel manufacturing project. Based in Greater Noida, India — product development, sourcing, manufacturing, QA and logistics for clothing brands.",
+  alternates: {
+    canonical: "https://moistcorp.com/contact",
+  },
+  openGraph: {
+    title: "Contact Moist Corp | Clothing Manufacturer India",
+    description:
+      "Start your apparel manufacturing project with Moist Corp — product development, sourcing, manufacturing, QA and logistics for clothing brands, based in Greater Noida, India.",
+    url: "https://moistcorp.com/contact",
+    siteName: "Moist Corp",
+    images: ["/factory-5.jpg"],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Moist Corp | Clothing Manufacturer India",
+    description:
+      "Start your apparel manufacturing project with Moist Corp — product development, sourcing, manufacturing, QA and logistics for clothing brands.",
+    images: ["/factory-5.jpg"],
+  },
+};
 
 export default function ContactPage() {
   return (
