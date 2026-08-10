@@ -1,4 +1,29 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Moist Corp | Clothing Manufacturer India",
+  description:
+    "Moist Corp is a clothing manufacturer helping apparel brands with product development, sourcing, manufacturing, quality assurance and logistics.",
+  alternates: { canonical: "/" },
+  openGraph: {
+    title: "Moist Corp | Clothing Manufacturer India",
+    description:
+      "Moist Corp is a clothing manufacturer helping apparel brands with product development, sourcing, manufacturing, quality assurance and logistics.",
+    url: "/",
+    siteName: "Moist Corp",
+    images: ["/factory-6.jpg"],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Moist Corp | Clothing Manufacturer India",
+    description:
+      "Moist Corp is a clothing manufacturer helping apparel brands with product development, sourcing, manufacturing, quality assurance and logistics.",
+    images: ["/factory-6.jpg"],
+  },
+};
 
 export default function Home() {
   return (
@@ -19,7 +44,7 @@ export default function Home() {
             <p className="hero-text">
               From product development and fabric sourcing to sampling,
               manufacturing, quality control and delivery - Moist Corp
-              manages the full production process so you don't have to.
+              manages the full production process so you don&apos;t have to.
             </p>
 
             <div className="hero-buttons">
@@ -29,6 +54,7 @@ export default function Home() {
               <a
                 href="/moist-corp-capability-deck.pdf"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="btn-secondary"
               >
                 Capability Deck
@@ -47,10 +73,11 @@ export default function Home() {
             <Image
               src="/factory-6.jpg"
               alt="Moist Corp Clothing Manufacturer India"
-              width={1200}
-              height={800}
+              width={960}
+              height={1280}
               className="hero-image"
               priority
+              sizes="(max-width: 768px) 90vw, 45vw"
             />
           </div>
         </div>
@@ -187,10 +214,11 @@ export default function Home() {
           <div>
             <Image
               src="/factory-4.jpg"
-              alt="Moist Corp Model"
-              width={800}
-              height={600}
+              alt="Moist Corp production model inside the manufacturing facility"
+              width={750}
+              height={1000}
               className="hero-image"
+              sizes="(max-width: 768px) 90vw, 45vw"
             />
           </div>
 
@@ -204,42 +232,42 @@ export default function Home() {
 
           <div className="product-gallery">
             <div className="gallery-item">
-              <Image src="/products/tshirt.jpg" alt="T-Shirts" width={600} height={750} />
+              <Image src="/products/tshirt.jpg" alt="T-Shirts" width={800} height={1000} sizes="(max-width: 768px) 45vw, 33vw" />
               <div className="gallery-tags">
                 <span className="gallery-tag">T-Shirts</span>
               </div>
             </div>
 
             <div className="gallery-item">
-              <Image src="/products/hoodie.jpg" alt="Hoodies" width={600} height={750} />
+              <Image src="/products/hoodie.jpg" alt="Hoodies" width={1280} height={1230} sizes="(max-width: 768px) 45vw, 33vw" />
               <div className="gallery-tags">
                 <span className="gallery-tag">Hoodies</span>
               </div>
             </div>
 
             <div className="gallery-item">
-              <Image src="/products/sweatshirt.jpg" alt="Sweatshirts" width={600} height={750} />
+              <Image src="/products/sweatshirt.jpg" alt="Sweatshirts" width={720} height={960} sizes="(max-width: 768px) 45vw, 33vw" />
               <div className="gallery-tags">
                 <span className="gallery-tag">Sweatshirts</span>
               </div>
             </div>
 
             <div className="gallery-item">
-              <Image src="/products/cargo.jpg" alt="Cargo Pants" width={600} height={750} />
+              <Image src="/products/cargo.jpg" alt="Cargo Pants" width={2160} height={2880} sizes="(max-width: 768px) 45vw, 33vw" />
               <div className="gallery-tags">
                 <span className="gallery-tag">Cargo Pants</span>
               </div>
             </div>
 
             <div className="gallery-item">
-              <Image src="/products/totebag.jpg" alt="Tote Bags" width={600} height={750} />
+              <Image src="/products/totebag.jpg" alt="Tote Bags" width={2000} height={2000} sizes="(max-width: 768px) 45vw, 33vw" />
               <div className="gallery-tags">
                 <span className="gallery-tag">Tote Bags</span>
               </div>
             </div>
 
             <div className="gallery-item">
-              <Image src="/products/shorts6.jpg" alt="Shorts" width={600} height={750} />
+              <Image src="/products/shorts6.jpg" alt="Shorts" width={1000} height={1000} sizes="(max-width: 768px) 45vw, 33vw" />
               <div className="gallery-tags">
                 <span className="gallery-tag">Shorts</span>
               </div>

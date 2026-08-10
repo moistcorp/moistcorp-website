@@ -19,14 +19,10 @@ export const metadata: Metadata = {
     "hoodie manufacturer India",
     "Greater Noida clothing manufacturer",
   ],
-  alternates: {
-    canonical: "https://moistcorp.com",
-  },
   openGraph: {
     title: "Moist Corp | Clothing Manufacturer India",
     description:
       "Moist Corp is a clothing manufacturer helping apparel brands with product development, sourcing, manufacturing, quality assurance and logistics.",
-    url: "https://moistcorp.com",
     siteName: "Moist Corp",
     locale: "en_IN",
     type: "website",
@@ -82,7 +78,6 @@ export default function RootLayout({
 
         <script
           type="application/ld+json"
-          // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
 

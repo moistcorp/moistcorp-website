@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
+import ContactForm from "../../components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact Us | Moist Corp — Clothing Manufacturer India",
@@ -56,17 +57,18 @@ export default function ContactPage() {
             </p>
 
             <p className="hero-text">
-              Tell us more about your business, products and objectives, and we'll
+              Tell us more about your business, products and objectives, and we&apos;ll
               assess whether Moist Corp is the right manufacturing partner for
               your needs.
             </p>
 
             <Image
               src="/factory-5.jpg"
-              alt="Moist Corp Factory"
+              alt="Moist Corp apparel manufacturing facility"
               width={800}
-              height={550}
+              height={1000}
               className="contact-image"
+              sizes="(max-width: 768px) 90vw, 45vw"
             />
 
           </div>
@@ -76,124 +78,7 @@ export default function ContactPage() {
 
             <h2>Contact Form</h2>
 
-            <form
-              action="https://formsubmit.co/irahulsig@gmail.com"
-              method="POST"
-              className="contact-form"
-            >
-
-              <input
-                type="hidden"
-                name="_subject"
-                value="New Moist Corp Inquiry"
-              />
-
-              <input
-                type="hidden"
-                name="_captcha"
-                value="false"
-              />
-
-              <div className="form-grid">
-
-                <div>
-                  <label>First Name *</label>
-                  <input
-                    type="text"
-                    name="firstName"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label>Last Name *</label>
-                  <input
-                    type="text"
-                    name="lastName"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label>Company Name *</label>
-                  <input
-                    type="text"
-                    name="company"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label>Website URL</label>
-                  <input
-                    type="url"
-                    name="website"
-                  />
-                </div>
-
-                <div>
-                  <label>Business Email *</label>
-                  <input
-                    type="email"
-                    name="email"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label>Phone Number</label>
-                  <input
-                    type="tel"
-                    name="phone"
-                  />
-                </div>
-
-                <div>
-                  <label>Monthly Order Quantity</label>
-
-                  <select name="quantity">
-                    <option>50 - 200 pcs</option>
-                    <option>200 - 500 pcs</option>
-                    <option>500 - 1000 pcs</option>
-                    <option>1000+ pcs</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label>Product Category</label>
-
-                  <select name="category">
-                    <option>T-Shirts</option>
-                    <option>Hoodies</option>
-                    <option>Sweatshirts</option>
-                    <option>Shorts</option>
-                    <option>Joggers</option>
-                    <option>Multiple Products</option>
-                  </select>
-                </div>
-
-              </div>
-
-              <div className="message-field">
-
-                <label>Project Details</label>
-
-                <textarea
-                  name="message"
-                  rows={6}
-                  placeholder="Tell us about your products, target quantity, timelines and manufacturing requirements."
-                />
-
-              </div>
-
-              <button
-                type="submit"
-                className="btn-primary"
-              >
-                Submit Inquiry
-              </button>
-
-            </form>
+            <ContactForm />
 
           </div>
 

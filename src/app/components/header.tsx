@@ -28,7 +28,6 @@ export default function Header() {
             alt="Moist Corp"
             width={70}
             height={70}
-            priority
           />
         </Link>
 

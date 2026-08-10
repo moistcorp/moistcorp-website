@@ -3,6 +3,8 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Privacy Policy | Moist Corp",
   description: "Privacy Policy for Moist Corp — Clothing Manufacturer India.",
+  alternates: { canonical: "/privacy-policy" },
+  robots: { index: false, follow: true },
 };
 
 export default function PrivacyPage() {
@@ -19,7 +21,7 @@ export default function PrivacyPage() {
           <div className="blog-post-body">
 
             <p>
-              This Privacy Policy explains how Moist Corp ("we", "us", "our") collects,
+              This Privacy Policy explains how Moist Corp (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;) collects,
               uses, and protects information submitted through moistcorp.com.
             </p>
 
@@ -36,14 +38,16 @@ export default function PrivacyPage() {
               Information submitted through our contact or inquiry forms is used solely
               to respond to your request and assess whether Moist Corp is a suitable
               manufacturing partner for your needs. We do not use your information for
-              unsolicited marketing and we do not sell or share your data with third parties.
+              unsolicited marketing and we do not sell your data. We may share it with
+              service providers necessary to host the website and deliver inquiry emails.
             </p>
 
             <h2>Data Storage</h2>
             <p>
-              Inquiry submissions are processed via FormSubmit and delivered to our internal
-              team email. We retain this information only for as long as is necessary to
-              respond to and manage your inquiry.
+              Inquiry submissions are sent through our website infrastructure and an email
+              delivery provider to our internal team email. These providers process the
+              information only to provide those services. We retain inquiry information
+              only for as long as is necessary to respond to and manage your inquiry.
             </p>
 
             <h2>Cookies</h2>

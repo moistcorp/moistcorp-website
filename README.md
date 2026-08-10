@@ -34,3 +34,19 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Contact form configuration
+
+The contact form posts to `/api/contact` and sends inquiries through Resend. Set these
+server-only environment variables in local development and on the deployment platform:
+
+```env
+RESEND_API_KEY=
+CONTACT_EMAIL_TO=info@moistcorp.com
+CONTACT_EMAIL_FROM=
+```
+
+`CONTACT_EMAIL_FROM` must use a sender address from a domain verified with Resend. The
+endpoint also applies a five-submission-per-IP, 15-minute in-memory limit and a honeypot.
+The in-memory limit is intentionally lightweight for this site; if the deployment grows
+to multiple high-volume instances, replace it with a shared rate-limit store.

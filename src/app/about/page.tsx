@@ -51,10 +51,11 @@ export default function AboutPage() {
             <Image
               src="/factory-1.jpg"
               alt="Moist Corp Factory Greater Noida"
-              width={1200}
-              height={800}
+              width={1800}
+              height={2400}
               className="hero-image"
               priority
+              sizes="(max-width: 768px) 90vw, 45vw"
             />
           </div>
 

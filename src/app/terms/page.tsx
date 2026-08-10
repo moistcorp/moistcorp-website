@@ -3,6 +3,8 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Terms and Conditions | Moist Corp",
   description: "Terms and Conditions for Moist Corp — Clothing Manufacturer India.",
+  alternates: { canonical: "/terms" },
+  robots: { index: false, follow: true },
 };
 
 export default function TermsPage() {
@@ -49,7 +51,7 @@ export default function TermsPage() {
 
             <h2>No Warranties</h2>
             <p>
-              This website is provided on an "as is" basis. Moist Corp makes no warranties,
+              This website is provided on an &quot;as is&quot; basis. Moist Corp makes no warranties,
               express or implied, regarding the accuracy, completeness, or reliability of
               any information on this website. We reserve the right to change or remove
               content at any time without notice.
