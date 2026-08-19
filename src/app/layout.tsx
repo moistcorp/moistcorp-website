@@ -139,7 +139,7 @@ export default function RootLayout({
 
         {/* FLOATING WHATSAPP BUTTON */}
         <a
-          href="https://wa.me/919971510083?text=Hi%2C%20I%20found%20Moist%20Corp%20online%20and%20would%20like%20to%20know%20more%20about%20your%20manufacturing%20services."
+          href="https://wa.me/918800711169?text=Hi%2C%20I%20found%20Moist%20Corp%20online%20and%20would%20like%20to%20know%20more%20about%20your%20manufacturing%20services."
           target="_blank"
           rel="noopener noreferrer"
           className="whatsapp-float"
