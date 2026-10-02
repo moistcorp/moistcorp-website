@@ -50,19 +50,19 @@ export default function ContactForm() {
         />
       </div>
 
-      <div className="form-grid">
+      <fieldset><legend><span>01</span> IDENTIFICATION</legend><div className="form-grid">
         <div>
-          <label htmlFor="firstName">First Name *</label>
+          <label htmlFor="firstName">First name <span>/ REQUIRED</span></label>
           <input id="firstName" type="text" name="firstName" required maxLength={100} />
         </div>
 
         <div>
-          <label htmlFor="lastName">Last Name *</label>
+          <label htmlFor="lastName">Last name <span>/ REQUIRED</span></label>
           <input id="lastName" type="text" name="lastName" required maxLength={100} />
         </div>
 
         <div>
-          <label htmlFor="company">Company Name *</label>
+          <label htmlFor="company">Company name <span>/ REQUIRED</span></label>
           <input id="company" type="text" name="company" required maxLength={150} />
         </div>
 
@@ -72,17 +72,17 @@ export default function ContactForm() {
         </div>
 
         <div>
-          <label htmlFor="email">Business Email *</label>
+          <label htmlFor="email">Business email <span>/ REQUIRED</span></label>
           <input id="email" type="email" name="email" required maxLength={254} />
         </div>
 
         <div>
-          <label htmlFor="phone">Phone Number</label>
+          <label htmlFor="phone">Phone number</label>
           <input id="phone" type="tel" name="phone" maxLength={40} />
         </div>
 
-        <div>
-          <label htmlFor="quantity">Monthly Order Quantity *</label>
+      </div></fieldset><fieldset><legend><span>02</span> PRODUCTION PARAMETERS</legend><div className="form-grid"><div>
+          <label htmlFor="quantity">Monthly order quantity <span>/ REQUIRED</span></label>
           <select id="quantity" name="quantity" required defaultValue="">
             <option value="">Select quantity</option>
             <option value="50 - 200 pcs">50 - 200 pcs</option>
@@ -93,7 +93,7 @@ export default function ContactForm() {
         </div>
 
         <div>
-          <label htmlFor="category">Product Category *</label>
+          <label htmlFor="category">Product category <span>/ REQUIRED</span></label>
           <select id="category" name="category" required defaultValue="">
             <option value="">Select product category</option>
             <option value="T-Shirts">T-Shirts</option>
@@ -104,10 +104,10 @@ export default function ContactForm() {
             <option value="Multiple Products">Multiple Products</option>
           </select>
         </div>
-      </div>
+      </div></fieldset>
 
-      <div className="message-field">
-        <label htmlFor="message">Project Details</label>
+      <fieldset><legend><span>03</span> TECHNICAL DATA</legend><div className="message-field">
+        <label htmlFor="message">Project details</label>
         <textarea
           id="message"
           name="message"
@@ -115,10 +115,10 @@ export default function ContactForm() {
           maxLength={5000}
           placeholder="Tell us about your products, target quantity, timelines and manufacturing requirements."
         />
-      </div>
+      </div></fieldset>
 
       <button type="submit" className="btn-primary" disabled={isSubmitting}>
-        {isSubmitting ? "Submitting..." : "Submit Inquiry"}
+        {isSubmitting ? "TRANSMITTING..." : "TRANSMIT PROJECT ↗"}
       </button>
 
       <p
@@ -128,7 +128,7 @@ export default function ContactForm() {
       >
         {submissionState === "success" && (
           <>
-            Thank you. Your inquiry has been received.
+            PROJECT RECEIVED. Your inquiry has been received.
             <br />
             Our team will get back to you shortly.
           </>

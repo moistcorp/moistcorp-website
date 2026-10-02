@@ -1,0 +1,16 @@
+import type { Metadata } from "next";
+import { ImagePanel, ProjectCTA, SectionHeader, StatusIndicator, SystemLabel } from "@/components/System";
+
+export const metadata: Metadata = { title: "Apparel Production Infrastructure | Moist Corp", description: "Explore Moist Corp's 46,000+ sq ft apparel production infrastructure in Greater Noida, India, supporting cutting, stitching, finishing, quality and packing.", alternates: { canonical: "/infrastructure" }, openGraph: { title: "Production Infrastructure | Moist Corp", description: "46,000+ sq ft of apparel production infrastructure in Greater Noida.", url: "/infrastructure", images: ["/factory-4.jpg"], type: "website" } };
+const facilities = [
+  ["MC-F01-CUT","Cutting","Material preparation and cutting organized against approved production specifications.","/factory-2.jpg"],
+  ["MC-F01-PRD","Stitching & production","Garment construction managed through the approved sequence and production schedule.","/factory-3.jpg"],
+  ["MC-F01-FIN","Finishing","Finished pieces prepared for inspection, presentation and packing.","/factory-5.jpg"],
+  ["MC-F01-QC","Quality control","Inline checks and final inspection applied before finished goods are released.","/factory-1.jpg"],
+  ["MC-F01-PKG","Packing & dispatch","Packing, documentation and freight handoff coordinated for delivery.","/factory-6.jpg"],
+];
+export default function InfrastructurePage(){return <main>
+  <section className="page-hero infrastructure-hero grid-dark"><div className="container page-hero-grid"><div><SystemLabel light>FACILITY ACCESS / PUBLIC</SystemLabel><h1>PRODUCTION<br />INFRASTRUCTURE.</h1><p>46,000+ square feet supporting the controlled movement of apparel from cut components to finished goods.</p><div className="facility-status"><span>FACILITY 01 / GREATER NOIDA</span><StatusIndicator>ACTIVE</StatusIndicator></div></div><ImagePanel src="/factory-4.jpg" alt="Moist Corp factory production floor" code="MC-F01 / GENERAL ACCESS" caption="PRODUCTION FLOOR / GREATER NOIDA" priority /></div></section>
+  <section className="section"><div className="container"><SectionHeader index="01" label="FACILITY SEQUENCE" title={<>THE FLOOR,<br />BY FUNCTION.</>} copy="Production moves through defined areas with oversight at each stage." /><div className="facility-grid">{facilities.map(([code,title,copy,image],i)=><article key={code} className="facility-card"><ImagePanel src={image} alt={`${title} at Moist Corp`} code={code} caption={`${String(i+1).padStart(2,'0')} / ${title.toUpperCase()}`} /><div><span>SECTOR / {String(i+1).padStart(2,'0')}</span><h2>{title}</h2><p>{copy}</p></div></article>)}</div></div></section>
+  <section className="section facility-data grid-light"><div className="container"><SectionHeader index="02" label="FACILITY DATA" title="OPERATING PARAMETERS." /><div className="metric-grid"><div className="metric"><span>01</span><strong>46,000+ <small>SQ FT</small></strong><p>PRODUCTION INFRASTRUCTURE</p></div><div className="metric"><span>02</span><strong>&lt;35 <small>DAYS</small></strong><p>PRODUCTION CYCLE</p></div><div className="metric"><span>03</span><strong>98.0%</strong><p>ON-TIME DELIVERY</p></div><div className="metric"><span>04</span><strong>50 <small>PCS</small></strong><p>STARTING MOQ</p></div></div></div></section><ProjectCTA />
+</main>}

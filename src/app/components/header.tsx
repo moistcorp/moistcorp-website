@@ -1,106 +1,30 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import Link from "next/link";
+import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+const links = [["Corporation", "/about"], ["Capabilities", "/products"], ["Infrastructure", "/infrastructure"], ["Intelligence", "/blog"]];
+
 export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
   const pathname = usePathname();
-
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    document.body.classList.toggle("nav-open", open);
+    return () => document.body.classList.remove("nav-open");
+  }, [open]);
 
-  return (
-    <header className={`header ${scrolled ? "header-scrolled" : ""}`}>
-      <div className="container header-inner">
-
-        <Link href="/" onClick={() => setMenuOpen(false)}>
-          <Image
-            src="/logo2.png"
-            alt="Moist Corp"
-            width={70}
-            height={70}
-          />
-        </Link>
-
-        <nav className="desktop-nav">
-          <Link
-            href="/about"
-            className={`nav-link ${pathname === "/about" ? "nav-active" : ""}`}
-          >
-            About
-          </Link>
-          <Link
-            href="/products"
-            className={`nav-link ${pathname === "/products" ? "nav-active" : ""}`}
-          >
-            Products
-          </Link>
-          <Link
-            href="/blog"
-            className={`nav-link ${pathname === "/blog" ? "nav-active" : ""}`}
-          >
-            Blog
-          </Link>
-          <Link
-            href="/contact"
-            className="btn-primary nav-cta"
-          >
-            Start Your Project
-          </Link>
-        </nav>
-
-        <button
-          className="hamburger"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
-        >
-          {menuOpen ? "✕" : "☰"}
-        </button>
-
-      </div>
-
-      {menuOpen && (
-        <nav className="mobile-nav">
-          <Link
-            href="/about"
-            className={pathname === "/about" ? "nav-active" : ""}
-            onClick={() => setMenuOpen(false)}
-          >
-            About
-          </Link>
-          <Link
-            href="/products"
-            className={pathname === "/products" ? "nav-active" : ""}
-            onClick={() => setMenuOpen(false)}
-          >
-            Products
-          </Link>
-          <Link
-            href="/blog"
-            className={pathname === "/blog" ? "nav-active" : ""}
-            onClick={() => setMenuOpen(false)}
-          >
-            Blog
-          </Link>
-          <Link
-            href="/contact"
-            className="mobile-nav-cta"
-            onClick={() => setMenuOpen(false)}
-          >
-            Start Your Project
-          </Link>
-        </nav>
-      )}
-
-    </header>
-  );
+  return <header className="site-header"><div className="header-shell">
+    <Link className="brand" href="/" aria-label="Moist Corp home"><Image src="/logo2.png" alt="" width={42} height={42} priority />
+      <span><strong>MOIST CORP</strong><small>APPAREL SYSTEMS</small></span></Link>
+    <nav className="desktop-nav" aria-label="Primary navigation">{links.map(([label, href]) => <Link key={href} href={href} aria-current={pathname === href ? "page" : undefined}>{label}</Link>)}</nav>
+    <div className="header-actions"><span className="header-status"><i />SYSTEMS ONLINE</span>
+      <Link href="/contact" className="nav-cta">INITIATE PROJECT <span>↗</span></Link>
+      <button className="menu-toggle" type="button" onClick={() => setOpen(!open)} aria-expanded={open} aria-controls="mobile-navigation" aria-label={open ? "Close menu" : "Open menu"}><span /><span /></button>
+    </div></div>
+    <nav id="mobile-navigation" className="mobile-nav" data-open={open} aria-label="Mobile navigation">
+      {links.map(([label, href], index) => <Link key={href} href={href} onClick={() => setOpen(false)}><span>0{index + 1}</span>{label}</Link>)}
+      <Link href="/contact" onClick={() => setOpen(false)}><span>05</span>Initiate project</Link>
+    </nav></header>;
 }
