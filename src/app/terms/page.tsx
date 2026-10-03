@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function TermsPage() {
   return (
-    <main>
+    <main id="main-content">
       <article className="blog-article">
         <div className="container narrow">
 

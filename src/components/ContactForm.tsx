@@ -50,38 +50,38 @@ export default function ContactForm() {
         />
       </div>
 
-      <fieldset><legend><span>01</span> IDENTIFICATION</legend><div className="form-grid">
+      <fieldset><legend><span>01</span> CONTACT DETAILS</legend><div className="form-grid">
         <div>
           <label htmlFor="firstName">First name <span>/ REQUIRED</span></label>
-          <input id="firstName" type="text" name="firstName" required maxLength={100} />
+          <input id="firstName" autoComplete="given-name" type="text" name="firstName" required maxLength={100} />
         </div>
 
         <div>
           <label htmlFor="lastName">Last name <span>/ REQUIRED</span></label>
-          <input id="lastName" type="text" name="lastName" required maxLength={100} />
+          <input id="lastName" autoComplete="family-name" type="text" name="lastName" required maxLength={100} />
         </div>
 
         <div>
           <label htmlFor="company">Company name <span>/ REQUIRED</span></label>
-          <input id="company" type="text" name="company" required maxLength={150} />
+          <input id="company" autoComplete="organization" type="text" name="company" required maxLength={150} />
         </div>
 
         <div>
           <label htmlFor="website">Website URL</label>
-          <input id="website" type="url" name="website" maxLength={200} />
+          <input id="website" autoComplete="url" type="url" name="website" maxLength={200} />
         </div>
 
         <div>
           <label htmlFor="email">Business email <span>/ REQUIRED</span></label>
-          <input id="email" type="email" name="email" required maxLength={254} />
+          <input id="email" autoComplete="email" type="email" name="email" required maxLength={254} />
         </div>
 
         <div>
           <label htmlFor="phone">Phone number</label>
-          <input id="phone" type="tel" name="phone" maxLength={40} />
+          <input id="phone" autoComplete="tel" type="tel" name="phone" maxLength={40} />
         </div>
 
-      </div></fieldset><fieldset><legend><span>02</span> PRODUCTION PARAMETERS</legend><div className="form-grid"><div>
+      </div></fieldset><fieldset><legend><span>02</span> PRODUCTION REQUIREMENTS</legend><div className="form-grid"><div>
           <label htmlFor="quantity">Monthly order quantity <span>/ REQUIRED</span></label>
           <select id="quantity" name="quantity" required defaultValue="">
             <option value="">Select quantity</option>
@@ -106,7 +106,7 @@ export default function ContactForm() {
         </div>
       </div></fieldset>
 
-      <fieldset><legend><span>03</span> TECHNICAL DATA</legend><div className="message-field">
+      <fieldset><legend><span>03</span> PROJECT DETAILS</legend><div className="message-field">
         <label htmlFor="message">Project details</label>
         <textarea
           id="message"
@@ -118,7 +118,7 @@ export default function ContactForm() {
       </div></fieldset>
 
       <button type="submit" className="btn-primary" disabled={isSubmitting}>
-        {isSubmitting ? "TRANSMITTING..." : "TRANSMIT PROJECT ↗"}
+        {isSubmitting ? "SUBMITTING..." : "SUBMIT PROJECT ↗"}
       </button>
 
       <p

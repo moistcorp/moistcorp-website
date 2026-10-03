@@ -26,13 +26,13 @@ export const metadata: Metadata = {
 
 export default function BlogPostInventory() {
   return (
-    <main>
+    <main id="main-content">
 
       <article className="blog-article">
         <div className="container narrow">
 
           {/* HEADER */}
-          <div className="blog-post-header">
+          <div className="blog-post-header"><p className="system-label">DOCUMENT / MC-INT-001</p>
             <span className="blog-tag">Supply Chain</span>
             <h1>
               Why Inventory Is One of the Biggest Financial Risks for Apparel Brands
@@ -186,7 +186,7 @@ export default function BlogPostInventory() {
               brands on product development, sourcing, sampling, production, quality assurance,
               and logistics — with a starting MOQ of 50 pieces and production cycles under 35
               days. If you want to reduce inventory risk and build a more responsive supply
-              chain, <a href="/contact">get in touch with our team</a>.
+              chain, <a href="/contact">initiate a project</a>.
             </p>
 
           </div>

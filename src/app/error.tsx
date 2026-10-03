@@ -2,7 +2,7 @@
 
 export default function GlobalError({ reset }: { reset: () => void }) {
   return (
-    <main className="section">
+    <main id="main-content" className="section">
       <div className="container narrow">
         <p className="eyebrow">Something went wrong</p>
         <h1>We couldn&apos;t load this page.</h1>

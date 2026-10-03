@@ -26,13 +26,13 @@ export const metadata: Metadata = {
 
 export default function BlogPost() {
   return (
-    <main>
+    <main id="main-content">
 
       <article className="blog-article">
         <div className="container narrow">
 
           {/* HEADER */}
-          <div className="blog-post-header">
+          <div className="blog-post-header"><p className="system-label">DOCUMENT / MC-INT-002</p>
             <span className="blog-tag">Manufacturing</span>
             <h1>
               Why AI Is Exposing the Broken Supply Chain Model in Apparel Manufacturing
@@ -158,7 +158,7 @@ export default function BlogPost() {
               Moist Corp is an integrated clothing manufacturer based in India, working with
               apparel brands across product development, sourcing, sampling, manufacturing,
               quality assurance and logistics. If you are looking for a more responsive
-              manufacturing partner, <a href="/contact">get in touch</a>.
+              manufacturing partner, <a href="/contact">initiate a project</a>.
             </p>
 
           </div>

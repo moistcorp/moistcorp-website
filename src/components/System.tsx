@@ -22,14 +22,14 @@ export function ArrowLink({ href, children, secondary = false }: { href: string;
 
 export function ImagePanel({ src, alt, code, caption, priority = false, className = "" }: { src: string; alt: string; code: string; caption: string; priority?: boolean; className?: string }) {
   return <figure className={`image-panel ${className}`}><div className="image-panel-code">{code}</div>
-    <div className="image-panel-media"><Image src={src} alt={alt} fill priority={priority} sizes="(max-width: 768px) 100vw, 50vw" /></div>
+    <div className="image-panel-media"><Image src={src} alt={alt} fill preload={priority} sizes="(max-width: 768px) 100vw, 50vw" /></div>
     <figcaption><span>FIG.</span><span>{caption}</span></figcaption></figure>;
 }
 
 export function ProjectCTA() {
   return <section className="project-cta grid-dark"><div className="container project-cta-inner"><div>
-    <SystemLabel light>PROJECT INTAKE / PUBLIC ACCESS</SystemLabel><h2>READY TO<br />BUILD?</h2></div>
-    <div className="project-cta-copy"><StatusIndicator>ACCEPTING PROJECTS</StatusIndicator>
+    <SystemLabel light>PROJECT INTAKE / PUBLIC ACCESS</SystemLabel><h2>INITIATE<br />A PROJECT.</h2></div>
+    <div className="project-cta-copy"><SystemLabel light>DEVELOPMENT → DELIVERY</SystemLabel>
       <p>Submit your production requirements for evaluation by the Moist Corp team.</p><ArrowLink href="/contact">INITIATE PROJECT</ArrowLink>
     </div></div></section>;
 }
