@@ -1,39 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Moist Corp website
 
-## Getting Started
+Apparel manufacturing website built with Next.js App Router, React and TypeScript.
 
-First, run the development server:
+## Development
 
-```bash
+```sh
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000. Pages live in `src/app`, shared components in `src/components`, and facility identities in `src/lib/facilities.ts`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Checks
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```sh
+npm run lint
+npx tsc --noEmit --noUnusedLocals --noUnusedParameters
+npm run build
+```
 
-## Learn More
+If a restricted environment prevents Turbopack from opening worker ports, use `npm run build -- --webpack` for production-build verification.
 
-To learn more about Next.js, take a look at the following resources:
+## Styling and assets
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The site uses plain global CSS in `src/app/globals.css`, with no Tailwind or custom PostCSS setup. Inter and IBM Plex Mono are self-hosted through `next/font/local`; font licenses are stored alongside the WOFF2 files. See [BRAND-SYSTEM.md](BRAND-SYSTEM.md) for identity rules and content attribution.
 
 ## Contact form configuration
 

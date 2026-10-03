@@ -12,10 +12,6 @@ export function SectionHeader({ index, label, title, copy, light = false }: { in
   </header>;
 }
 
-export function StatusIndicator({ children = "Operational" }: { children?: React.ReactNode }) {
-  return <span className="status-indicator"><span aria-hidden="true" />{children}</span>;
-}
-
 export function ArrowLink({ href, children, secondary = false }: { href: string; children: React.ReactNode; secondary?: boolean }) {
   return <Link href={href} className={secondary ? "button button-secondary" : "button button-primary"}><span>{children}</span><span aria-hidden="true">↗</span></Link>;
 }
