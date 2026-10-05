@@ -59,22 +59,10 @@ const organizationJsonLd = {
   description:
     "Moist Corp is a clothing manufacturer helping apparel brands with product development, sourcing, manufacturing, quality assurance and logistics.",
   email: "info@moistcorp.com",
-  address: [
-    {
-      "@type": "PostalAddress",
-      streetAddress: "K-320",
-      addressLocality: "Greater Noida",
-      addressRegion: "Uttar Pradesh",
-      addressCountry: "IN",
-    },
-    {
-      "@type": "PostalAddress",
-      streetAddress: "Q-5",
-      addressLocality: "Greater Noida",
-      addressRegion: "Uttar Pradesh",
-      addressCountry: "IN",
-    },
-  ],
+  address: {
+    "@type": "PostalAddress",
+    addressCountry: "IN",
+  },
   sameAs: [
     "https://instagram.com/moist.corp",
     "https://linkedin.com/company/moist-corp",

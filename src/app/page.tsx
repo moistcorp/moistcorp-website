@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { SelectedProjects } from "@/components/CaseStudy";
 import { FacilityRegister } from "@/components/FacilityRegister";
 import { ArrowLink, ImagePanel, ProjectCTA, SectionHeader, SystemLabel } from "@/components/System";
+import { caseStudies } from "@/lib/case-studies";
 
 export const metadata: Metadata = {
   title: "Moist Corp | Apparel Production Infrastructure India",
-  description: "Apparel production infrastructure for brands: product development, materials, sampling, manufacturing, quality control and logistics, coordinated from Greater Noida, India.",
+  description: "Apparel production infrastructure for brands: product development, materials, sampling, manufacturing, quality control and logistics through one coordinated system.",
   alternates: { canonical: "/" },
   openGraph: { title: "Moist Corp | Apparel Production Infrastructure", description: "One controlled production system for apparel brands.", url: "/", siteName: "Moist Corp", images: ["/factory-6.jpg"], locale: "en_IN", type: "website" },
   twitter: { card: "summary_large_image", title: "Moist Corp | Apparel Production Infrastructure", description: "One controlled production system for apparel brands.", images: ["/factory-6.jpg"] },
@@ -29,7 +31,7 @@ const faqs = [
   ["How long does production take?", "Our production cycle runs under 35 days from confirmed order to finished goods. Sampling timelines are agreed before an order is placed."],
   ["Do you work with first-time brand founders?", "Yes. We guide founders through specifications, sampling, bulk production and delivery."],
   ["What products do you manufacture?", "We manufacture T-shirts, hoodies, sweatshirts, cargo pants, shorts, joggers, shirts, tank tops, baby tees, skirts and tote bags."],
-  ["Can I visit the facility?", "Yes. Our facility is in Greater Noida, Uttar Pradesh. Contact our team to arrange a visit."],
+  ["Can I visit the facility?", "Yes. Contact our team to arrange a facility visit."],
 ];
 
 export default function Home() {
@@ -37,10 +39,10 @@ export default function Home() {
     <section className="home-hero grid-light"><div className="container hero-layout"><div className="hero-copy">
       <SystemLabel>MOIST CORP / APPAREL SYSTEMS</SystemLabel>
       <h1>WE BUILD THE<br />INFRASTRUCTURE<br />BEHIND APPAREL.</h1>
-      <p>Product development, sourcing and apparel manufacturing for brands. From the first sample to finished goods, coordinated from Greater Noida, India.</p>
+      <p>Product development, sourcing and apparel manufacturing for brands. From the first sample to finished goods, coordinated through one operating system.</p>
       <div className="button-row"><ArrowLink href="/contact">INITIATE PROJECT</ArrowLink><ArrowLink href="/products" secondary>EXPLORE CAPABILITIES</ArrowLink></div>
-      <div className="hero-status"><span>MC-Q5 / MC-K320</span><span>GREATER NOIDA / INDIA</span></div>
-    </div><ImagePanel src="/factory-6.jpg" alt="Garment production at Moist Corp's Greater Noida facility" code="MC / PRODUCTION FLOOR" caption="APPAREL MANUFACTURING / INDIA" priority className="hero-panel" /></div></section>
+      <div className="hero-status"><span>MC-Q5 / MC-K320</span><span>STATUS / OPERATIONAL</span></div>
+    </div><ImagePanel src="/factory-6.jpg" alt="Garment production at a Moist Corp manufacturing facility" code="MC / PRODUCTION FLOOR" caption="APPAREL MANUFACTURING / OPERATIONS" priority className="hero-panel" /></div></section>
 
     <section className="metrics"><div className="container"><SystemLabel>MC / OPERATING PARAMETERS</SystemLabel><div className="metric-grid">
       {[['46,000+', 'SQ FT', 'PRODUCTION INFRASTRUCTURE'], ['98.0%', '', 'ON-TIME DELIVERY'], ['<35', 'DAYS', 'PRODUCTION CYCLE'], ['50', 'PCS', 'STARTING MOQ']].map(([value, unit, label], i) => <div className="metric" key={label}><span>0{i + 1}</span><strong>{value} <small>{unit}</small></strong><p>{label}</p></div>)}
@@ -52,9 +54,13 @@ export default function Home() {
 
     <FacilityRegister />
 
-    <section className="section infrastructure-preview grid-dark"><div className="container"><SectionHeader light index="02" label="INFRASTRUCTURE" title={<>46,000+ SQ FT<br />UNDER CONTROL.</>} copy="Cutting, stitching, finishing, quality control and packing coordinated from Greater Noida." />
-      <div className="infrastructure-media"><Image src="/factory-5.jpg" alt="Garment panels laid out across Moist Corp production tables" fill sizes="100vw" /><div className="media-overlay"><span>FACILITY / GREATER NOIDA</span><span>MANUFACTURING / PRODUCTION FLOOR</span></div></div>
+    <section className="section infrastructure-preview grid-dark"><div className="container"><SectionHeader light index="02" label="INFRASTRUCTURE" title={<>46,000+ SQ FT<br />UNDER CONTROL.</>} copy="Cutting, stitching, finishing, quality control and packing coordinated through one operating network." />
+      <div className="infrastructure-media"><Image src="/factory-5.jpg" alt="Garment panels laid out across Moist Corp production tables" fill sizes="100vw" /><div className="media-overlay"><span>MC-Q5 / MC-K320</span><span>MANUFACTURING / PRODUCTION FLOOR</span></div></div>
       <div className="infrastructure-footer"><p>Our manufacturing infrastructure supports cutting, assembly, finishing and dispatch, with quality checks throughout the production sequence.</p><ArrowLink href="/infrastructure">EXPLORE INFRASTRUCTURE</ArrowLink></div>
+    </div></section>
+
+    <section className="section selected-projects"><div className="container"><SectionHeader index="03" label="CASE STUDIES" title={<>SELECTED<br />PROJECTS.</>} copy="Project records showing merchandise development and focused production in execution." />
+      <SelectedProjects studies={caseStudies} />
     </div></section>
 
     <section className="section programs"><div className="container"><SectionHeader index="04" label="APPAREL CAPABILITIES" title={<>BUILT TO<br />YOUR SPEC.</>} copy="Core apparel categories developed and produced through the same controlled operating system." />

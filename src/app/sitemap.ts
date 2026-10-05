@@ -4,6 +4,9 @@ export default function sitemap() {
     { url: "https://moistcorp.com/about", lastModified: "2026-07-01", priority: 0.8 },
     { url: "https://moistcorp.com/products", lastModified: "2026-07-01", priority: 0.9 },
     { url: "https://moistcorp.com/infrastructure", lastModified: "2026-10-02", priority: 0.8 },
+    { url: "https://moistcorp.com/case-studies", lastModified: "2026-10-04", priority: 0.8 },
+    { url: "https://moistcorp.com/case-studies/alienkind", lastModified: "2026-10-04", priority: 0.7 },
+    { url: "https://moistcorp.com/case-studies/grantiro", lastModified: "2026-10-04", priority: 0.7 },
     { url: "https://moistcorp.com/contact", lastModified: "2026-07-01", priority: 0.7 },
     { url: "https://moistcorp.com/blog", lastModified: "2026-07-01", priority: 0.6 },
     {
