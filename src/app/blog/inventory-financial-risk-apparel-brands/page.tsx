@@ -175,7 +175,7 @@ export default function BlogPostInventory() {
               The brands that outperform in this environment will not necessarily be the
               ones that forecast more accurately. They will be the ones that work with
               manufacturing partners capable of moving faster — shortening lead times,
-              reducing minimum order quantities, and giving brands the flexibility to act
+              improving production flexibility, and giving brands the ability to act
               on real demand rather than educated guesses.
             </p>
 
@@ -184,8 +184,8 @@ export default function BlogPostInventory() {
             <p className="blog-cta-text">
               Moist Corp is an integrated clothing manufacturer in India working with apparel
               brands on product development, sourcing, sampling, production, quality assurance,
-              and logistics — with a starting MOQ of 50 pieces and production cycles under 35
-              days. If you want to reduce inventory risk and build a more responsive supply
+              and logistics — with sample development within 72 hours and production cycles
+              under 35 days. If you want to reduce inventory risk and build a more responsive supply
               chain, <a href="/contact">initiate a project</a>.
             </p>
 
