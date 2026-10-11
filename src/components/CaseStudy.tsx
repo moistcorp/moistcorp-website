@@ -46,11 +46,13 @@ export function CaseStudyGallery({
   projectId: string;
 }) {
   const availableImages = images.filter(({ src }) => hasPublicImage(src));
-  const visibleImages = availableImages.length > 0 ? availableImages : images;
+  if (availableImages.length === 0) return null;
 
-  return <div className={`container case-study-gallery-grid${visibleImages.length === 1 ? " case-study-gallery-single" : ""}`}>
-    {visibleImages.map((image) => <CaseStudyMedia key={image.key} image={image} projectId={projectId} />)}
-  </div>;
+  return <section className="case-study-gallery">
+    <div className={`container case-study-gallery-grid${availableImages.length === 1 ? " case-study-gallery-single" : ""}`}>
+      {availableImages.map((image) => <CaseStudyMedia key={image.key} image={image} projectId={projectId} />)}
+    </div>
+  </section>;
 }
 
 export function CaseStudyCard({ study }: { study: CaseStudy }) {

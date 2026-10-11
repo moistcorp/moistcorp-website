@@ -48,20 +48,12 @@ export default async function CaseStudyPage({ params }: Props) {
       <section className="case-study-hero-image"><div className="container"><CaseStudyMedia image={study.images[0]} projectId={study.projectId} hero /></div></section>
 
       <section className="case-study-story section"><div className="container">
-        {study.sections.slice(0, 2).map((section) => <section className="case-study-story-row" key={section.index}>
+        {study.sections.map((section) => <section className="case-study-story-row" key={section.index}>
           <div><span>{section.index}</span><h2>{section.title}</h2></div><p>{section.copy}</p>
         </section>)}
       </div></section>
 
-      <section className="case-study-gallery"><CaseStudyGallery images={study.images.slice(1, 3)} projectId={study.projectId} /></section>
-
-      <section className="case-study-story section"><div className="container">
-        {study.sections.slice(2).map((section) => <section className="case-study-story-row" key={section.index}>
-          <div><span>{section.index}</span><h2>{section.title}</h2></div><p>{section.copy}</p>
-        </section>)}
-      </div></section>
-
-      <section className="case-study-gallery case-study-gallery-final"><CaseStudyGallery images={study.images.slice(3)} projectId={study.projectId} /></section>
+      <CaseStudyGallery images={study.images.slice(1, 3)} projectId={study.projectId} />
     </article>
     <ProjectCTA />
   </main>;
