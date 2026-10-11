@@ -44,7 +44,6 @@ const faqs = [
 export default function Home() {
   return <main id="main-content">
     <section className="home-hero grid-light"><div className="container hero-layout"><div className="hero-copy">
-      <SystemLabel>MOIST CORP / APPAREL SYSTEMS</SystemLabel>
       <h1>WE BUILD THE<br />INFRASTRUCTURE<br />BEHIND APPAREL.</h1>
       <p>Product development, sourcing and apparel manufacturing for brands. From the first sample to finished goods, coordinated through one operating system.</p>
       <div className="button-row"><ArrowLink href="/contact">INITIATE PROJECT</ArrowLink><ArrowLink href="/products" secondary>EXPLORE CAPABILITIES</ArrowLink></div>
