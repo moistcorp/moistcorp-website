@@ -23,7 +23,7 @@ export default function Home() {
     <section className="home-hero grid-light"><div className="container hero-layout"><div className="hero-copy">
       <h1>WE BUILD THE<br />INFRASTRUCTURE<br />BEHIND APPAREL.</h1>
       <p>Product development, sourcing and apparel manufacturing for brands. From the first sample to finished goods, coordinated through one operating system.</p>
-      <div className="button-row"><ArrowLink href="/contact">INITIATE PROJECT</ArrowLink><ArrowLink href="/products" secondary>EXPLORE CAPABILITIES</ArrowLink></div>
+      <div className="button-row"><ArrowLink href="/contact">INITIATE PROJECT</ArrowLink><ArrowLink href="/capabilities" secondary>EXPLORE CAPABILITIES</ArrowLink></div>
       <div className="hero-status"><span>MC-Q5 / MC-K320</span><span>STATUS / OPERATIONAL</span></div>
     </div><ImagePanel src="/factory-6.jpg" alt="Garment production at a Moist Corp manufacturing facility" code="MC / PRODUCTION FLOOR" caption="APPAREL MANUFACTURING / OPERATIONS" priority className="hero-panel" /></div></section>
 

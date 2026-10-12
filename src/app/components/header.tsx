@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const links = [["Corporation", "/about"], ["Capabilities", "/products"], ["Infrastructure", "/infrastructure"], ["Case Studies", "/case-studies"], ["Intelligence", "/blog"]];
+const links = [["Corporation", "/about"], ["Capabilities", "/capabilities"], ["Products", "/products"], ["Infrastructure", "/infrastructure"], ["Case Studies", "/case-studies"]];
 
 export default function Header() {
   const [open, setOpen] = useState(false);

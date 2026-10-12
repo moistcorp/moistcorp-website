@@ -40,7 +40,7 @@ export default async function CaseStudyPage({ params }: Props) {
         <div className="case-study-breadcrumb"><Link href="/case-studies">CASE STUDIES</Link><span>/</span><span>{study.projectId}</span></div>
         <div className="case-study-hero-grid">
           <div><SystemLabel light>{study.eyebrow}</SystemLabel><h1>{study.client}</h1><h2>{study.title}</h2></div>
-          <div className="case-study-intro"><p>{study.intro}</p><div className="button-row"><ArrowLink href="/contact">INITIATE A PROJECT</ArrowLink><ArrowLink href="/products" secondary>VIEW CAPABILITIES</ArrowLink></div></div>
+          <div className="case-study-intro"><p>{study.intro}</p><div className="button-row"><ArrowLink href="/contact">INITIATE A PROJECT</ArrowLink><ArrowLink href="/capabilities" secondary>VIEW CAPABILITIES</ArrowLink></div></div>
         </div>
         <dl className="case-study-metadata">{study.metadata.map(([label, value]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>
       </div></header>
