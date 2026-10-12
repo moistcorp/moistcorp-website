@@ -55,7 +55,7 @@ const organizationJsonLd = {
   additionalType: "https://schema.org/Manufacturer",
   name: "Moist Corp",
   url: "https://moistcorp.com",
-  logo: "https://moistcorp.com/logo2.png",
+  logo: "https://moistcorp.com/brand-logo.png",
   description:
     "Moist Corp is a clothing manufacturer helping apparel brands with product development, sourcing, manufacturing, quality assurance and logistics.",
   email: "info@moistcorp.com",

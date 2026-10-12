@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const links = [["Corporation", "/about"], ["Capabilities", "/capabilities"], ["Products", "/products"], ["Infrastructure", "/infrastructure"], ["Case studies", "/case-studies"], ["Intelligence", "/blog"], ["Project intake", "/contact"]];
+const links = [["Corporation", "/about"], ["Capabilities", "/capabilities"], ["Products", "/products"], ["Shop", "/shop"], ["Infrastructure", "/infrastructure"], ["Case studies", "/case-studies"], ["Intelligence", "/blog"], ["Project intake", "/contact"]];
 
 export default function Footer() {
   return <footer className="site-footer"><div className="container">

@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const links = [["Corporation", "/about"], ["Capabilities", "/capabilities"], ["Products", "/products"], ["Infrastructure", "/infrastructure"], ["Case Studies", "/case-studies"]];
+const links = [["Corporation", "/about"], ["Capabilities", "/capabilities"], ["Products", "/products"], ["Shop", "/shop"], ["Infrastructure", "/infrastructure"], ["Case Studies", "/case-studies"]];
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -43,7 +43,7 @@ export default function Header() {
   }, [open]);
 
   return <header className="site-header"><div className="header-shell">
-    <Link className="brand" href="/" aria-label="Moist Corp home"><Image src="/logo2.png" alt="" width={42} height={42} preload />
+    <Link className="brand" href="/" aria-label="Moist Corp home"><Image src="/brand-logo.png" alt="" width={42} height={42} preload />
       <span><strong>MOIST CORP</strong><small>APPAREL SYSTEMS</small></span></Link>
     <nav className="desktop-nav" aria-label="Primary navigation">{links.map(([label, href]) => <Link key={href} href={href} aria-current={isCurrent(href) ? "page" : undefined}>{label}</Link>)}</nav>
     <div className="header-actions">
@@ -52,6 +52,6 @@ export default function Header() {
     </div></div>
     <nav id="mobile-navigation" className="mobile-nav" data-open={open} inert={!open} aria-label="Mobile navigation">
       {links.map(([label, href], index) => <Link key={href} href={href} aria-current={isCurrent(href) ? "page" : undefined} onClick={() => setOpen(false)}><span>0{index + 1}</span>{label}</Link>)}
-      <Link href="/contact" onClick={() => setOpen(false)}><span>06</span>Initiate project</Link>
+      <Link href="/contact" onClick={() => setOpen(false)}><span>0{links.length + 1}</span>Initiate project</Link>
     </nav></header>;
 }
