@@ -9,6 +9,11 @@ export type Product = {
   construction: readonly string[];
   finishing: readonly string[];
   customisation: readonly string[];
+  variants?: readonly {
+    name: string;
+    image: string;
+    detail: string;
+  }[];
 };
 
 export const products: readonly Product[] = [
@@ -22,7 +27,7 @@ export const products: readonly Product[] = [
     fit: ["Regular", "Relaxed", "Oversized", "Custom block development"],
     construction: ["Ribbed crew neck", "Shoulder reinforcement", "Coverstitched hems", "Single-needle or twin-needle detailing"],
     finishing: ["Enzyme or silicone wash", "Garment dye options", "Pre-shrink treatment", "Measurement and appearance inspection"],
-    customisation: ["Screen print", "Embroidery", "Heat transfer", "Custom labels, trims and packaging"],
+    customisation: ["Screen printing", "Custom artwork placement", "Custom labels, trims and packaging"],
   },
   {
     id: "002",
@@ -34,7 +39,7 @@ export const products: readonly Product[] = [
     fit: ["Regular", "Relaxed", "Oversized", "Cropped or extended body"],
     construction: ["Pullover or zip-through", "Single or double-layer hood", "Kangaroo or welt pockets", "Rib cuff and hem construction"],
     finishing: ["Brushed or loopback interior", "Garment wash options", "Pre-shrink treatment", "Shape and seam inspection"],
-    customisation: ["Print and embroidery", "Appliqué", "Custom drawcords and hardware", "Custom labels and packaging"],
+    customisation: ["Screen printing", "Custom artwork placement", "Custom drawcords and hardware", "Custom labels and packaging"],
   },
   {
     id: "003",
@@ -46,7 +51,7 @@ export const products: readonly Product[] = [
     fit: ["Regular", "Relaxed", "Oversized", "Drop-shoulder development"],
     construction: ["Crew or specialty neckline", "Set-in or raglan sleeve", "Rib cuff, neck and hem", "Reinforced stress points"],
     finishing: ["Softener wash", "Garment dye options", "Pre-shrink treatment", "Measurement and appearance inspection"],
-    customisation: ["Screen print", "Embroidery", "Appliqué and patches", "Custom labels and packaging"],
+    customisation: ["Screen printing", "Custom artwork placement", "Custom labels and packaging"],
   },
   {
     id: "004",
@@ -58,7 +63,7 @@ export const products: readonly Product[] = [
     fit: ["Straight", "Relaxed", "Tapered", "Custom rise and leg profile"],
     construction: ["Cargo pocket systems", "Reinforced seat and stress points", "Zip or button fly", "Fixed, elasticated or adjustable waist"],
     finishing: ["Garment wash options", "Enzyme or pigment finish", "Hardware inspection", "Measurement and seam-strength checks"],
-    customisation: ["Custom pocket layout", "Branded buttons and hardware", "Embroidery and patches", "Custom labels and packaging"],
+    customisation: ["Screen printing", "Custom pocket layout", "Branded buttons and hardware", "Custom labels and packaging"],
   },
   {
     id: "005",
@@ -70,7 +75,7 @@ export const products: readonly Product[] = [
     fit: ["Regular", "Relaxed", "Athletic", "Custom inseam and rise"],
     construction: ["Elasticated waistband", "Internal or external drawcord", "Side, welt or patch pockets", "Reinforced stress points"],
     finishing: ["Garment wash options", "Pre-shrink treatment", "Hardware and drawcord checks", "Measurement inspection"],
-    customisation: ["Print and embroidery", "Custom trims", "Branded drawcords and hardware", "Custom labels and packaging"],
+    customisation: ["Screen printing", "Custom trims", "Branded drawcords and hardware", "Custom labels and packaging"],
   },
   {
     id: "006",
@@ -82,7 +87,36 @@ export const products: readonly Product[] = [
     fit: ["Standard", "Oversized", "Gusseted", "Custom dimensions"],
     construction: ["Reinforced handle attachment", "Flat or boxed base", "Lined or unlined", "Optional internal pocket and closure"],
     finishing: ["Natural or dyed fabric", "Garment wash options", "Load-point inspection", "Final appearance inspection"],
-    customisation: ["Screen print", "Embroidery", "Custom handles and closures", "Custom labels and packaging"],
+    customisation: ["Screen printing", "Custom handles and closures", "Custom labels and packaging"],
+  },
+  {
+    id: "007",
+    slug: "waffle-full-sleeves",
+    name: "Waffle Full Sleeves",
+    summary: "Full-sleeve waffle-knit tops developed as one program across three screen-printed artwork editions.",
+    images: ["/products/saint_grace_waffle.png", "/products/phantom_crown_waffle.png"],
+    fabric: ["Waffle-knit fabric", "Textured thermal surface", "Weight selected to product brief"],
+    fit: ["Relaxed", "Oversized", "Full sleeve", "Custom block development"],
+    construction: ["Ribbed crew neck", "Drop-shoulder sleeve", "Distressed or ripped raw-edge hem and cuffs", "Reinforced shoulder seams"],
+    finishing: ["Screen printing", "Rhinestone application on Starfall Ripped", "Distressed edge finishing", "Measurement and appearance inspection"],
+    customisation: ["Screen printing", "Body and sleeve artwork placement", "Optional rhinestone artwork", "Custom labels, trims and packaging"],
+    variants: [
+      {
+        name: "Saint Grace",
+        image: "/products/saint_grace_waffle.png",
+        detail: "All-over screen-printed artwork with distressed edge detailing.",
+      },
+      {
+        name: "Phantom Crown",
+        image: "/products/phantom_crown_waffle.png",
+        detail: "Oversized screen-printed artwork across the body and sleeves.",
+      },
+      {
+        name: "Starfall Ripped",
+        image: "/products/starfall_ripped_waffle.png",
+        detail: "Screen-printed artwork, rhinestone embellishment and ripped raw edges.",
+      },
+    ],
   },
 ] as const;
 

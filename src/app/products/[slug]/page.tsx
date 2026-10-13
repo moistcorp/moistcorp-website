@@ -48,6 +48,7 @@ export default async function ProductDetailPage({ params }: Props) {
       <div className="product-spec-layout"><div className="product-spec-image"><Image src={product.images[1]} alt={`${product.name} fabric and construction detail`} fill sizes="(max-width: 760px) 100vw, 42vw" /></div><dl className="product-spec-list">{specifications.map(([label, values], index) => <div key={label}><dt><span>0{index + 1}</span>{label}</dt><dd>{values.map((value) => <span key={value}>{value}</span>)}</dd></div>)}</dl></div>
       <p className="product-spec-note">The options shown are a development starting point. Final fabric, measurements, construction, trims and finishing are confirmed through sampling and approved specifications.</p>
     </div></section>
+    {product.variants && <section className="section product-variants"><div className="container"><SectionHeader index="02" label="PROGRAM 007 / ARTWORK EDITIONS" title="ONE PROGRAM. THREE EDITIONS." copy="All three waffle full-sleeve designs share the same product program, with artwork and finishing specified by edition." /><div className="product-variant-grid">{product.variants.map((variant) => <article key={variant.name}><div><Image src={variant.image} alt={`${variant.name} waffle full-sleeve`} fill sizes="(max-width: 760px) 100vw, 33vw" /></div><span>PROGRAM {product.id}</span><h2>{variant.name}</h2><p>{variant.detail}</p></article>)}</div></div></section>}
     <ProjectCTA />
   </main>;
 }

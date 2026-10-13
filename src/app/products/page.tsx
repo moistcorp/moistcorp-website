@@ -6,7 +6,7 @@ import { products } from "@/lib/products";
 
 export const metadata: Metadata = {
   title: "Apparel Products We Manufacture | Moist Corp",
-  description: "Explore T-shirts, hoodies, sweatshirts, cargo pants, shorts and tote bags manufactured by Moist Corp.",
+  description: "Explore T-shirts, hoodies, sweatshirts, cargo pants, shorts, tote bags and waffle full sleeves manufactured by Moist Corp.",
   alternates: { canonical: "/products" },
   openGraph: { title: "Apparel Products | Moist Corp", description: "Explore product categories, fabrics, fits, construction and finishing options.", url: "/products", images: ["/products/tshirt.jpg"], type: "website" },
 };
