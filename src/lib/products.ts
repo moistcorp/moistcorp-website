@@ -14,6 +14,11 @@ export type Product = {
     image: string;
     detail: string;
   }[];
+  variantSection?: {
+    label: string;
+    title: string;
+    copy: string;
+  };
 };
 
 export const products: readonly Product[] = [
@@ -46,12 +51,39 @@ export const products: readonly Product[] = [
     slug: "sweatshirts",
     name: "Sweatshirts",
     summary: "Crewneck and specialty sweatshirt programs with controlled structure and consistent finishing.",
-    images: ["/products/sweatshirt.jpg", "/products/sweatshirts-3.jpg"],
+    images: ["/products/sweatshirt-4.png", "/products/sweatshirt-5.png"],
     fabric: ["Brushed fleece", "French terry", "Cotton-rich blends", "Recycled fibre options"],
     fit: ["Regular", "Relaxed", "Oversized", "Drop-shoulder development"],
     construction: ["Crew or specialty neckline", "Set-in or raglan sleeve", "Rib cuff, neck and hem", "Reinforced stress points"],
     finishing: ["Softener wash", "Garment dye options", "Pre-shrink treatment", "Measurement and appearance inspection"],
     customisation: ["Screen printing", "Custom artwork placement", "Custom labels and packaging"],
+    variants: [
+      {
+        name: "Floral Gradient",
+        image: "/products/sweatshirt-4.png",
+        detail: "Crewneck sweatshirt with monochrome floral artwork and a gradient screen-print treatment.",
+      },
+      {
+        name: "Distressed Gradient",
+        image: "/products/sweatshirt-5.png",
+        detail: "Oversized crewneck with gradient screen printing and distressed surface detailing.",
+      },
+      {
+        name: "Sleeve Graphic",
+        image: "/products/sweatshirts-3.jpg",
+        detail: "Classic crewneck with screen-printed artwork placed across both sleeves.",
+      },
+      {
+        name: "Washed Crewneck",
+        image: "/products/sweatshirt.jpg",
+        detail: "Minimal crewneck developed with a washed finish and clean construction.",
+      },
+    ],
+    variantSection: {
+      label: "PROGRAM 003 / PRODUCT EXAMPLES",
+      title: "ONE PROGRAM. MULTIPLE DIRECTIONS.",
+      copy: "Sweatshirt programs can be developed across artwork, wash and surface treatments while retaining controlled fit and construction.",
+    },
   },
   {
     id: "004",
@@ -117,6 +149,11 @@ export const products: readonly Product[] = [
         detail: "Screen-printed artwork, rhinestone embellishment and ripped raw edges.",
       },
     ],
+    variantSection: {
+      label: "PROGRAM 007 / ARTWORK EDITIONS",
+      title: "ONE PROGRAM. THREE EDITIONS.",
+      copy: "All three waffle full-sleeve designs share the same product program, with artwork and finishing specified by edition.",
+    },
   },
 ] as const;
 
