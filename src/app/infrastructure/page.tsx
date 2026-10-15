@@ -3,8 +3,8 @@ import { ImagePanel, ProjectCTA, SectionHeader, SystemLabel } from "@/components
 
 export const metadata: Metadata = { title: "Apparel Production Infrastructure | Moist Corp", description: "Explore Moist Corp's 46,000+ sq ft apparel production infrastructure supporting cutting, stitching, finishing, quality and packing.", alternates: { canonical: "/infrastructure" }, openGraph: { title: "Production Infrastructure | Moist Corp", description: "46,000+ sq ft of coordinated apparel production infrastructure.", url: "/infrastructure", images: ["/factory-4.jpg"], type: "website" } };
 const archive = [
-  ["MC / PRODUCTION", "Production floor", "Garment panels arranged along the production tables.", "/factory-5.jpg", "Garment panels laid out on long production tables"],
-  ["MC / PRINTING", "Print execution", "Apparel printing equipment within the manufacturing environment.", "/factory-6.jpg", "Carousel screen-printing equipment at Moist Corp"],
+  ["MC / PRODUCTION", "Production floor", "Garment panels arranged along the production tables.", "/factory-5.jpeg", "Garment panels laid out on long production tables"],
+  ["MC / PRINTING", "Print execution", "Apparel printing equipment within the manufacturing environment.", "/factory-6.jpeg", "Carousel screen-printing equipment at Moist Corp"],
   ["MC / MATERIAL DETAIL", "Prepared components", "Printed garment panels before assembly.", "/factory-2.jpg", "Printed black garment panels laid flat on a work surface"],
 ];
 const operations = [
