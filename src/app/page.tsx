@@ -12,17 +12,17 @@ export const metadata: Metadata = {
 };
 
 const stages = [
-  ["01", "Develop", "Product development, sampling and technical execution."],
-  ["02", "Source", "Fabric, trims and material coordination."],
-  ["03", "Make", "Cutting, sewing, finishing and quality control."],
-  ["04", "Deliver", "Packing, documentation and outbound logistics."],
+  ["01", "DEVELOP", "Sampling, technical development and production preparation."],
+  ["02", "SOURCE", "Fabric, trims and material coordination."],
+  ["03", "MAKE", "Cutting, sewing, finishing and quality control."],
+  ["04", "REPLENISH", "Repeat production designed to keep successful products in supply."],
 ];
 
 export default function Home() {
   return <main id="main-content">
     <section className="home-hero grid-light"><div className="container hero-layout"><div className="hero-copy">
-      <h1>WE BUILD THE<br />INFRASTRUCTURE<br />BEHIND APPAREL.</h1>
-      <p>Product development, sourcing and apparel manufacturing for brands. From the first sample to finished goods, coordinated through one operating system.</p>
+      <h1>DEVELOP.<br />MAKE.<br />REPLENISH.</h1>
+      <p>We develop, manufacture and replenish apparel for brands - from first sample to ongoing production.</p>
       <div className="button-row"><ArrowLink href="/contact">INITIATE PROJECT</ArrowLink><ArrowLink href="/capabilities" secondary>EXPLORE CAPABILITIES</ArrowLink></div>
       <div className="hero-status"><span>MC-Q5 / MC-K320</span><span>STATUS / OPERATIONAL</span></div>
     </div><ImagePanel src="/factory-6.jpeg" alt="Garment production at a Moist Corp manufacturing facility" code="MC / PRODUCTION FLOOR" caption="APPAREL MANUFACTURING / OPERATIONS" priority className="hero-panel" /></div></section>
@@ -31,7 +31,7 @@ export default function Home() {
       {[['46,000+', 'SQ FT', 'PRODUCTION INFRASTRUCTURE'], ['98.0%', '', 'ON-TIME DELIVERY'], ['<35', 'DAYS', 'PRODUCTION CYCLE'], ['72', 'HOURS', 'SAMPLE DEVELOPMENT']].map(([value, unit, label], i) => <div className="metric" key={label}><span>0{i + 1}</span><strong>{value} <small>{unit}</small></strong><p>{label}</p></div>)}
     </div></div></section>
 
-    <section className="section production-system"><div className="container"><SectionHeader index="01" label="OPERATING SYSTEM" title={<>FROM CONCEPT<br />TO DELIVERY.</>} copy="You design the product. We coordinate everything required to produce it." />
+    <section className="section production-system"><div className="container"><SectionHeader index="01" label="OPERATING SYSTEM" title={<>FROM DEVELOPMENT<br />TO CONTINUOUS SUPPLY.</>} copy="We take products from development and sourcing through manufacturing, delivery and repeat production." />
       <ol className="process-flow">{stages.map(([number, title, copy]) => <li key={number}><span>{number}</span><h3>{title}</h3><p>{copy}</p></li>)}</ol>
     </div></section>
 
