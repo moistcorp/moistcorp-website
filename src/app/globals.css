@@ -248,13 +248,14 @@ body,main,.grid-light,.site-header,.image-panel,.skip-link,.case-study-media { b
 
 /* A denser catalogue keeps the capability overview complete without a long scroll. */
 .catalogue-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
-.catalogue-images { height:340px; }
+.product-card .catalogue-images { height:auto; aspect-ratio:4/3; }
+.product-card .catalogue-images>div { min-width:0; background:#fff; }
+.product-card .catalogue-images img { padding:clamp(10px,1.25vw,18px); object-fit:contain; object-position:center; }
 @media (max-width:1100px) {
   .catalogue-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
 }
 @media (max-width:760px) {
   .catalogue-grid { grid-template-columns:1fr; }
-  .catalogue-images { height:auto; aspect-ratio:4/3; }
 }
 
 /* Infrastructure imagery stays visible without turning the page into a long archive. */
