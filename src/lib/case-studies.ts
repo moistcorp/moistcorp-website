@@ -4,6 +4,7 @@ export type CaseStudyImage = {
   src: string;
   alt: string;
   position?: string;
+  fit?: "cover" | "contain";
 };
 
 export type CaseStudy = {
@@ -36,11 +37,13 @@ export const caseStudies: ReadonlyArray<CaseStudy> = [
     cardTitle: "Merchandise Development",
     title: "FROM MERCHANDISE IDEA TO LAUNCH.",
     intro:
-      "Alienkind is a Bangalore-based fast-food brand that approached Moist Corp to develop merchandise for the brand. Moist Corp supported the project through product development and manufacturing guidance, helping translate the concept into a production-ready execution and supporting the successful launch of the collection.",
+      "Alienkind is a Bangalore-based fast-food brand that approached Moist Corp to develop a merchandise collection. We translated its graphic direction into heavyweight, production-ready T-shirts made from 260 GSM cotton French terry, then managed printing and finishing through launch.",
     metadata: [
       ["PROJECT", "MC-CS-001"],
       ["CLIENT", "ALIENKIND"],
       ["TYPE", "MERCHANDISE DEVELOPMENT"],
+      ["FABRIC", "260 GSM COTTON FRENCH TERRY"],
+      ["PRINT", "SCREEN PRINT"],
       ["STATUS", "COMPLETED"],
     ],
     sections: [
@@ -51,56 +54,58 @@ export const caseStudies: ReadonlyArray<CaseStudy> = [
       },
       {
         index: "02",
-        title: "Development",
-        copy: "Moist Corp guided the development process, helping translate Alienkind's brand direction into products that could progress toward manufacturing. The work focused on practical production considerations and refinement toward a launchable result.",
+        title: "Fabric & development",
+        copy: "We developed the T-shirts in 260 GSM cotton French terry, balancing a substantial hand feel with the comfort and drape needed for an everyday merchandise piece.",
       },
       {
         index: "03",
-        title: "Execution",
-        copy: "Once the merchandise direction was ready, the project progressed from development into production with Moist Corp coordinating the manufacturing process.",
+        title: "Print & finishing",
+        copy: "Alienkind's detailed artwork was screen printed across the garments. A softener and silicone wash completed the finishing process, giving the fabric a smoother, softer hand feel.",
       },
       {
         index: "04",
         title: "Outcome",
-        copy: "Alienkind successfully launched its merchandise, extending the brand into a physical apparel product developed and produced with Moist Corp.",
+        copy: "The finished collection carried Alienkind's visual world into a heavyweight apparel product with sharp print detail and a smooth, comfortable finish, ready for the brand's merchandise launch.",
       },
     ],
     images: [
       {
         key: "hero",
-        label: "Finished merchandise",
-        src: "/images/case-studies/alienkind/alienkind-hero.jpg",
-        alt: "Alienkind merchandise produced with Moist Corp.",
+        label: "Finished garment / cobalt",
+        src: "/images/case-studies/alienkind/BLUE-BACK_9f6865d8-b6dd-4235-ac18-cfa707066f7d.jpg.webp",
+        alt: "Model wearing the cobalt Alienkind screen-printed French terry T-shirt produced by Moist Corp.",
+        position: "center 58%",
+        fit: "contain",
       },
       {
-        key: "brand-context",
-        label: "Brand context",
-        src: "/images/case-studies/alienkind/alienkind-brand-context.jpg",
-        alt: "Alienkind merchandise in the brand environment.",
+        key: "black-blue-full",
+        label: "Screen print / black and blue",
+        src: "/images/case-studies/alienkind/Back_Full_7ce67aac-ca0e-48ae-9140-17300a265ddb.jpg.webp",
+        alt: "Full view of the black Alienkind T-shirt with blue, white, and grey screen-printed artwork.",
       },
       {
-        key: "product-detail",
-        label: "Product detail",
-        src: "/images/case-studies/alienkind/alienkind-product-detail.jpg",
-        alt: "Alienkind merchandise production detail.",
+        key: "black-green-full",
+        label: "Screen print / black and green",
+        src: "/images/case-studies/alienkind/Back_Full_2e628022-18f4-4b72-9889-f0f70c5c86bb.jpg.webp",
+        alt: "Full view of the black Alienkind T-shirt with green, white, and grey screen-printed artwork.",
       },
       {
-        key: "development",
-        label: "Development record",
-        src: "/images/case-studies/alienkind/alienkind-development.jpg",
-        alt: "Alienkind merchandise development sample.",
+        key: "blue-print-detail",
+        label: "Print detail / cobalt",
+        src: "/images/case-studies/alienkind/Back_Closeup_07c51d94-a067-46b3-9c90-714a9d4d916b.jpg.webp",
+        alt: "Close-up of the detailed white, grey, and blue screen print on cobalt French terry fabric.",
       },
       {
-        key: "launch",
-        label: "Launch record",
-        src: "/images/case-studies/alienkind/alienkind-launch.jpg",
-        alt: "Alienkind merchandise after launch.",
+        key: "black-print-detail",
+        label: "Print detail / black",
+        src: "/images/case-studies/alienkind/Back_Closeup_c84ab976-6d4b-46ee-ae2a-06399128cefd.jpg.webp",
+        alt: "Close-up of the layered blue, white, grey, and black screen print on Alienkind merchandise.",
       },
     ],
     seo: {
       title: "Alienkind Merchandise Development — Moist Corp Case Study",
       description:
-        "How Moist Corp supported Alienkind in developing and launching branded merchandise.",
+        "How Moist Corp developed Alienkind merchandise in 260 GSM cotton French terry with screen printing and a softener and silicone wash.",
     },
   },
   {

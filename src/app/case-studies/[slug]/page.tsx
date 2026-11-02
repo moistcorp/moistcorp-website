@@ -53,7 +53,7 @@ export default async function CaseStudyPage({ params }: Props) {
         </section>)}
       </div></section>
 
-      <CaseStudyGallery images={study.images.slice(1, 3)} projectId={study.projectId} />
+      <CaseStudyGallery images={study.images.slice(1)} projectId={study.projectId} />
     </article>
     <ProjectCTA />
   </main>;

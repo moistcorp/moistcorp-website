@@ -27,7 +27,7 @@ export function CaseStudyMedia({
         fill
         preload={hero}
         sizes={hero ? "(max-width: 1440px) 100vw, 1360px" : "(max-width: 760px) 100vw, 50vw"}
-        style={{ objectPosition: image.position ?? "center" }}
+        style={{ objectPosition: image.position ?? "center", objectFit: image.fit ?? "cover" }}
       /> : <div className="case-study-placeholder" role="img" aria-label={`${image.label} image awaiting project photography`}>
         <span>{projectId}</span>
         <strong>IMAGE RECORD<br />PENDING</strong>
